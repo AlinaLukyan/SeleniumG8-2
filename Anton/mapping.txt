@@ -1,0 +1,5 @@
+*****Login*****
+
+LoginPage.inputEmailID=xpath(".//*[@id='email']");
+LoginPage.inputPassword=xpath(".//*[@id='pass']");
+LoginPage.clickLoginButton=xpath(".//*[@id='signuphint']/form/input[2]");
