@@ -72,9 +72,16 @@ public class FirstTestSet extends BaseTest {
     }
 
     @Test
+    public void signUp(){
+
+    }
+
+    @Test
     public void deleteTypeForm(){
 
     }
+
+
 
 
 
@@ -86,7 +93,6 @@ public class FirstTestSet extends BaseTest {
     //5. IsElementPresent (boolean)
 
 
-    //Sign up
 
     @Test(enabled = false)
     public void logOut(){
