@@ -15,9 +15,8 @@ public class TypeFormBuilderPage extends Header {
         super(driver);
     }
 
-    public WebElement getFormEntered(){
+    public WebElement getFormEntered() {
         return formEntered;
     }
 
-    /////
 }
