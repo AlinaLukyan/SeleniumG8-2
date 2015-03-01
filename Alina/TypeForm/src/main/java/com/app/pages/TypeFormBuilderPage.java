@@ -18,4 +18,6 @@ public class TypeFormBuilderPage extends Header {
     public WebElement getFormEntered(){
         return formEntered;
     }
+
+    /////
 }
