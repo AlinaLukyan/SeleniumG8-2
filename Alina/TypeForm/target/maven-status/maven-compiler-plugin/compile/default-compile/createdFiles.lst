@@ -1,0 +1,5 @@
+com/app/pages/AddNewFormPage.class
+com/app/libs/WebElements.class
+com/app/pages/TypeFormBuilderPage.class
+com/app/pages/LogInPage.class
+com/app/pages/TypeFormPage.class
