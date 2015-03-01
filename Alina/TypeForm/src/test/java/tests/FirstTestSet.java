@@ -78,6 +78,7 @@ public class FirstTestSet extends BaseTest {
 
     @Test
     public void deleteTypeForm(){
+        driver.findElements(By.name("sgj"));
 
     }
 
@@ -87,7 +88,6 @@ public class FirstTestSet extends BaseTest {
 
 
 
-    //0. UIMapping file
     //2. Select radio-button by its block
     //3. Select from drop-down
     //5. IsElementPresent (boolean)

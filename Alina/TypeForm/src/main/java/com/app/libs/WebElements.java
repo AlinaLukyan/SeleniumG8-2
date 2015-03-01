@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.NoSuchElementException;
+
 /*
 * This class implements methods to work with default web-elements
  */
@@ -58,7 +60,7 @@ public class WebElements {
     }
 
     public void openUrl(String url){
-        //providing a browser might be a good solution
+        //providing a browser type might be a good solution
         driver.manage().window().maximize();
         driver.get(url);
     }
@@ -66,7 +68,20 @@ public class WebElements {
     /**
      * The method refreshes a current page
      */
-    public void refreshPage(){
+    public void refreshPage() {
         driver.get(driver.getCurrentUrl());
     }
+
+    /**
+     * The method checks if an element is present on the
+     */
+    private boolean isElementPresent(By by) {
+        try {
+            driver.findElement(by);
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+
 }
