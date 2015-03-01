@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
 
 /*
 * This class implements methods to work with default web-elements
@@ -46,8 +46,8 @@ public class WebElements {
         System.out.println("Button with locator <" + linkLocator + "> was clicked");
     }
 
-    public void selectCheckBox(String checkBoxLocator, boolean checkBoxState){
-        WebElement checkBox = driver.findElement(By.xpath(checkBoxLocator));
+    public void selectCheckBox(By by, boolean checkBoxState){
+        WebElement checkBox = driver.findElement(by);
         boolean currentState = checkBox.isSelected();
 
         if((!currentState && checkBoxState) || (currentState && !checkBoxState)){
@@ -55,7 +55,7 @@ public class WebElements {
             System.out.println("We've just modified the current checkbox state");
         }
         else {
-            System.out.println("Nothing has been done to the checkbox with locator <" + checkBoxLocator + ">");
+            System.out.println("Nothing has been done to the checkbox with locator <" + by + ">");
         }
     }
 
@@ -73,15 +73,30 @@ public class WebElements {
     }
 
     /**
-     * The method checks if an element is present on the
+     * The method checks if an element is present on the page
      */
     private boolean isElementPresent(By by) {
-        try {
-            driver.findElement(by);
-            return true;
-        } catch (NoSuchElementException e) {
-            return false;
-        }
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+        boolean result = driver.findElements(by).size() > 0;
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        return result;
+
+//        try {
+//            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+//            driver.findElement(by);
+//            return true;
+//        } catch (NoSuchElementException e) {
+//            return false;
+//        } finally {
+//            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+//        }
+
     }
+
+
+
+    //2. Select radio-button by its block
+    //3. Select from drop-down
+
 
 }
