@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 
-public class TypeFormBuilderPage extends Header{
+public class TypeFormBuilderPage extends Header {
 
     @FindBy(how = How.XPATH, using = ".//*[@id='current-form']")
     WebElement formEntered;

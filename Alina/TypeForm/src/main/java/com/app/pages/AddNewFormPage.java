@@ -10,9 +10,6 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Alinka on 25/02/15.
- */
 public class AddNewFormPage {
 
     WebDriver driver;
@@ -28,7 +25,7 @@ public class AddNewFormPage {
     WebElement formType;
 
     @FindBy(how = How.XPATH, using = ".//*[@id='add-form']/form/div[4]/input")
-    WebElement buidButton;
+    WebElement buildButton;
 
 
     public AddNewFormPage(WebDriver driver){
@@ -56,7 +53,7 @@ public class AddNewFormPage {
     }
 
     public TypeFormBuilderPage openFormBuilderPage(){
-        this.buidButton.click();
+        this.buildButton.click();
         return PageFactory.initElements(driver, TypeFormBuilderPage.class);
     }
 
