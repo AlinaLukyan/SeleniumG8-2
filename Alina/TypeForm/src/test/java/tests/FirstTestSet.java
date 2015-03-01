@@ -83,17 +83,6 @@ public class FirstTestSet extends BaseTest {
     }
 
 
-
-
-
-
-
-    //2. Select radio-button by its block
-    //3. Select from drop-down
-    //5. IsElementPresent (boolean)
-
-
-
     @Test(enabled = false)
     public void logOut(){
         driver.findElement(By.xpath(".//*[@id='header']/div[1]/ul/li[2]/a/div")).click();
