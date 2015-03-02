@@ -6,23 +6,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
-import java.util.concurrent.TimeUnit;
+import java.util.List;
 
 public class AddNewFormPage {
 
     WebDriver driver;
-    Select select;
 
     @FindBy(how = How.XPATH, using = ".//*[@id='quickyform_name']")
-    WebElement formName;
+    WebElement formNameInput;
 
-    @FindBy(how = How.XPATH, using = "html/body/div[7]/ul/li[1]/div")
-    WebElement formLanguage;
+    @FindBy(how = How.XPATH, using = "//*[@id='s2id_quickyform_language']/a/div/b")
+    WebElement formLanguageSelect;
 
-    @FindBy(how = How.XPATH, using = "html/body/div[7]/ul/li[1]/div")
-    WebElement formType;
+    @FindBy(how = How.XPATH, using = ".//*[@id='s2id_quickyform_category']/a/div/b")
+    WebElement formTypeSelect;
 
     @FindBy(how = How.XPATH, using = ".//*[@id='add-form']/form/div[4]/input")
     WebElement buildButton;
@@ -33,27 +31,37 @@ public class AddNewFormPage {
     }
 
     public AddNewFormPage withFormName(String formName){
-        this.formName.clear();
-        this.formName.sendKeys(formName);
+        formNameInput.clear();
+        formNameInput.sendKeys(formName);
         return this;
     }
 
-    public AddNewFormPage withFormLanguage(){
-        driver.findElement(By.xpath(".//*[@id='s2id_quickyform_language']/a/div/b")).click();
-        this.formLanguage.click();
-//        new Select(this.formLanguage).selectByVisibleText(formLanguage);
+    public AddNewFormPage withFormLanguage(String formLanguage){
+        formLanguageSelect.click();
+        List<WebElement> options = formLanguageSelect.findElements(By.xpath("//div[@class='select2-result-label']"));
+        for (WebElement element : options){
+            if(element.getText().equals(formLanguage)) {
+                element.click();
+                break;
+            }
+        }
         return this;
     }
 
-    public AddNewFormPage withFormType(){
-        driver.findElement(By.xpath(".//*[@id='s2id_quickyform_category']/a/div/b")).click();
-        this.formType.click();
-        driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
+    public AddNewFormPage withFormType(String formType){
+        formTypeSelect.click();
+        List<WebElement> options = formTypeSelect.findElements(By.xpath("//div[@class='select2-result-label']"));
+        for (WebElement element : options) {
+            if (element.getText().equals(formType)) {
+                element.click();
+                break;
+            }
+        }
         return this;
     }
 
     public TypeFormBuilderPage openFormBuilderPage(){
-        this.buildButton.click();
+        buildButton.click();
         return PageFactory.initElements(driver, TypeFormBuilderPage.class);
     }
 

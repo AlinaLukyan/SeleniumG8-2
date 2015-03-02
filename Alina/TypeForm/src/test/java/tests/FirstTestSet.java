@@ -34,13 +34,15 @@ public class FirstTestSet extends BaseTest {
     @Test
     public void createNewTypeForm(){
         String formName = "TypeForm1";
+        String formType = "Pro";
+        String formLanguage = "English";
 
         TypeFormPage typeFormPage = PageFactory.initElements(driver, TypeFormPage.class);
 
         AddNewFormPage addNewFormPage = typeFormPage.addNewForm();
         TypeFormBuilderPage typeFormBuilderPage = addNewFormPage.withFormName(formName)
-                .withFormLanguage()  //no argument as of now
-                .withFormType()
+                .withFormLanguage(formLanguage)
+                .withFormType(formType)
                 .openFormBuilderPage();
 
         Assert.assertTrue(typeFormBuilderPage.getFormEntered().getText().contains(formName));
@@ -55,14 +57,16 @@ public class FirstTestSet extends BaseTest {
     @Test
     public void theNumberOfFormsShouldIncreaseByOne(){
         String formName = "TypeForm+1";
+        String formType = "Pro";
+        String formLanguage = "English";
 
         TypeFormPage typeFormPage = PageFactory.initElements(driver, TypeFormPage.class);
         int currentFormNumber = typeFormPage.getTotalFormNumber();
 
         AddNewFormPage addNewFormPage = typeFormPage.addNewForm();
         TypeFormPage typeFormPage1 = addNewFormPage.withFormName(formName)
-                .withFormLanguage()  //no arguments as of now
-                .withFormType()      //no arguments as of now
+                .withFormLanguage(formLanguage)
+                .withFormType(formType)
                 .openFormBuilderPage()
                 .goToHomePage();
 
@@ -76,7 +80,6 @@ public class FirstTestSet extends BaseTest {
 
     @Test
     public void deleteTypeForm(){
-        driver.findElements(By.name("sgj"));
 
     }
 
@@ -86,20 +89,5 @@ public class FirstTestSet extends BaseTest {
         driver.findElement(By.xpath(".//*[@id='header']/div[1]/ul/li[2]/a/div")).click();
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
         driver.findElement(By.xpath(".//*[@id='menu-logout']")).click();
-    }
-
-
-    @Test(enabled = false)
-    public void methodLibrary(){
-        driver.getTitle();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
-        driver.getCurrentUrl().equals("https://www.google.com/doodles");
-
-//        wait.until(ExpectedConditions.visibilityOf(formEntered));
-
-//        Select select = new Select(driver.findElement(By.xpath("//path_to_drop_down")));
-//        select.deselectAll();
-//        select.selectByVisibleText("Value1");
     }
 }

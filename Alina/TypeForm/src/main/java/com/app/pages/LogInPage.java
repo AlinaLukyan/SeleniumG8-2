@@ -10,10 +10,10 @@ public class LogInPage {
     WebDriver driver;
 
     @FindBy(how = How.XPATH, using = ".//input[@id='_username']")
-    WebElement username;
+    WebElement usernameInput;
 
     @FindBy(how = How.XPATH, using = ".//input[@id='_password']")
-    WebElement password;
+    WebElement passwordInput;
 
     @FindBy(how = How.XPATH, using = ".//*[@id='btnlogin']")
     WebElement loginButton;
@@ -23,8 +23,8 @@ public class LogInPage {
     }
 
     public void logIn(String username, String password){
-        this.username.sendKeys(username);
-        this.password.sendKeys(password);
+        usernameInput.sendKeys(username);
+        passwordInput.sendKeys(password);
         loginButton.click();
     }
 }
