@@ -97,11 +97,11 @@ public class WebElements {
     /**
      * The method implements selecting elements from a drop-down list
      */
-    public void selectFromDropDown(By selectButtonLocator, By listElementLocator, String elementText){
+    public void selectFromDropDown(By selectButtonLocator, By elementListLocator, String elementText){
         WebElement selectButton = driver.findElement(selectButtonLocator);
         selectButton.click();
 
-        List<WebElement> options = selectButton.findElements(listElementLocator);
+        List<WebElement> options = selectButton.findElements(elementListLocator);
         for (WebElement element : options) {
             if (element.getText().equals(elementText)) {
                 element.click();
@@ -110,7 +110,21 @@ public class WebElements {
         }
     }
 
-    //2. Select radio-button by its block
+    /**
+     * The method implements selecting a radio-button from a radio-button block
+     */
+    public void selectRadioButton(By radioElementsLocator, int option) {
+        if (option <= 0) {
+            throw new IndexOutOfBoundsException(option + " is less or equal ZERO");
+        } else {
+            List<WebElement> radioElements = driver.findElements(radioElementsLocator);
 
+            if (option > 0 && option <= radioElements.size()) {
+                radioElements.get(option - 1).click();
 
+            } else {
+                throw new IndexOutOfBoundsException("Option " + option + " wasn't found");
+            }
+        }
+    }
 }
