@@ -58,7 +58,6 @@ public class FirstTestSet extends BaseTest {
 
         TypeFormPage typeFormPage = PageFactory.initElements(driver, TypeFormPage.class);
         int currentFormNumber = typeFormPage.getTotalFormNumber();
-        System.out.println("Current number of forms is " + currentFormNumber);
 
         AddNewFormPage addNewFormPage = typeFormPage.addNewForm();
         TypeFormPage typeFormPage1 = addNewFormPage.withFormName(formName)
@@ -67,7 +66,6 @@ public class FirstTestSet extends BaseTest {
                 .openFormBuilderPage()
                 .goToHomePage();
 
-        System.out.println("Now the number of forms is " + typeFormPage.getTotalFormNumber());
         Assert.assertEquals(typeFormPage.getTotalFormNumber(), currentFormNumber+1);
     }
 

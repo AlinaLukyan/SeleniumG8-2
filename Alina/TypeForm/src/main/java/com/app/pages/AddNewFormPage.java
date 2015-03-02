@@ -48,7 +48,7 @@ public class AddNewFormPage {
     public AddNewFormPage withFormType(){
         driver.findElement(By.xpath(".//*[@id='s2id_quickyform_category']/a/div/b")).click();
         this.formType.click();
-        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
         return this;
     }
 
