@@ -17,10 +17,10 @@ public class AddNewFormPage {
     WebElement formNameInput;
 
     @FindBy(how = How.XPATH, using = "//*[@id='s2id_quickyform_language']/a/div/b")
-    WebElement formLanguageSelect;
+    WebElement formLanguageSelectButton;
 
     @FindBy(how = How.XPATH, using = ".//*[@id='s2id_quickyform_category']/a/div/b")
-    WebElement formTypeSelect;
+    WebElement formTypeSelectButton;
 
     @FindBy(how = How.XPATH, using = ".//*[@id='add-form']/form/div[4]/input")
     WebElement buildButton;
@@ -37,8 +37,8 @@ public class AddNewFormPage {
     }
 
     public AddNewFormPage withFormLanguage(String formLanguage){
-        formLanguageSelect.click();
-        List<WebElement> options = formLanguageSelect.findElements(By.xpath("//div[@class='select2-result-label']"));
+        formLanguageSelectButton.click();
+        List<WebElement> options = formLanguageSelectButton.findElements(By.xpath("//div[@class='select2-result-label']"));
         for (WebElement element : options){
             if(element.getText().equals(formLanguage)) {
                 element.click();
@@ -49,8 +49,8 @@ public class AddNewFormPage {
     }
 
     public AddNewFormPage withFormType(String formType){
-        formTypeSelect.click();
-        List<WebElement> options = formTypeSelect.findElements(By.xpath("//div[@class='select2-result-label']"));
+        formTypeSelectButton.click();
+        List<WebElement> options = formTypeSelectButton.findElements(By.xpath("//div[@class='select2-result-label']"));
         for (WebElement element : options) {
             if (element.getText().equals(formType)) {
                 element.click();

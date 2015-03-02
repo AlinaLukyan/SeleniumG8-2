@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /*
@@ -75,7 +76,7 @@ public class WebElements {
     /**
      * The method checks if an element is present on the page
      */
-    private boolean isElementPresent(By by) {
+    public boolean isElementPresent(By by) {
         driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         boolean result = driver.findElements(by).size() > 0;
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -93,10 +94,23 @@ public class WebElements {
 
     }
 
+    /**
+     * The method implements selecting elements from a drop-down list
+     */
+    public void selectFromDropDown(By selectButtonLocator, By listElementLocator, String elementText){
+        WebElement selectButton = driver.findElement(selectButtonLocator);
+        selectButton.click();
 
+        List<WebElement> options = selectButton.findElements(listElementLocator);
+        for (WebElement element : options) {
+            if (element.getText().equals(elementText)) {
+                element.click();
+                break;
+            }
+        }
+    }
 
     //2. Select radio-button by its block
-    //3. Select from drop-down
 
 
 }
