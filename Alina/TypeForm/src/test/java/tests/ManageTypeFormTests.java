@@ -17,6 +17,7 @@ public class ManageTypeFormTests extends BaseTest{
      */
     @Test
     public void createNewTypeForm(){
+        //to be generated automatically
         String formName = "TypeForm1";
         String formType = "Pro";
         String formLanguage = "English";
@@ -40,6 +41,7 @@ public class ManageTypeFormTests extends BaseTest{
      */
     @Test
     public void theNumberOfFormsShouldIncreaseByOne(){
+        //to be generated automatically
         String formName = "TypeForm+1";
         String formType = "Pro";
         String formLanguage = "English";
