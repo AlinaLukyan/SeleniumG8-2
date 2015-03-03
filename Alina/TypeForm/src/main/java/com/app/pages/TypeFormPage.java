@@ -41,9 +41,9 @@ public class TypeFormPage {
         return activeForms.size();
     }
 
-    public AddNewFormPage addNewForm() {
+    public NewFormPage addNewForm() {
         newTypeFormButton.click();
-        return PageFactory.initElements(driver, AddNewFormPage.class);
+        return PageFactory.initElements(driver, NewFormPage.class);
     }
 
     /**

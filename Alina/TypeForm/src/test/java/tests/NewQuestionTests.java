@@ -3,7 +3,7 @@ package tests;
 
 import org.testng.annotations.Test;
 
-public class AddQuestionTests extends BaseTest {
+public class NewQuestionTests extends BaseTest {
 
     /**
      * Positive tests

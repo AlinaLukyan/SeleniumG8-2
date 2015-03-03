@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class AddNewFormPage {
+public class NewFormPage {
 
     WebDriver driver;
 
@@ -26,18 +26,18 @@ public class AddNewFormPage {
     WebElement buildButton;
 
 
-    public AddNewFormPage(WebDriver driver){
+    public NewFormPage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    public AddNewFormPage withFormName(String formName){
+    public NewFormPage withFormName(String formName){
         formNameInput.clear();
         formNameInput.sendKeys(formName);
         return this;
     }
 
-    public AddNewFormPage withFormLanguage(String formLanguage){
+    public NewFormPage withFormLanguage(String formLanguage){
         formLanguageSelectButton.click();
         List<WebElement> options = formLanguageSelectButton.findElements(By.xpath("//div[@class='select2-result-label']"));
         for (WebElement element : options){
@@ -49,7 +49,7 @@ public class AddNewFormPage {
         return this;
     }
 
-    public AddNewFormPage withFormType(String formType){
+    public NewFormPage withFormType(String formType){
         formTypeSelectButton.click();
         List<WebElement> options = formTypeSelectButton.findElements(By.xpath("//div[@class='select2-result-label']"));
         for (WebElement element : options) {

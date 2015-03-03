@@ -1,6 +1,6 @@
 package tests;
 
-import com.app.pages.AddNewFormPage;
+import com.app.pages.NewFormPage;
 import com.app.pages.TypeFormBuilderPage;
 import com.app.pages.TypeFormPage;
 import org.openqa.selenium.support.PageFactory;
@@ -24,8 +24,8 @@ public class ManageTypeFormTests extends BaseTest{
 
         TypeFormPage typeFormPage = PageFactory.initElements(driver, TypeFormPage.class);
 
-        AddNewFormPage addNewFormPage = typeFormPage.addNewForm();
-        TypeFormBuilderPage typeFormBuilderPage = addNewFormPage.withFormName(formName)
+        NewFormPage newFormPage = typeFormPage.addNewForm();
+        TypeFormBuilderPage typeFormBuilderPage = newFormPage.withFormName(formName)
                 .withFormLanguage(formLanguage)
                 .withFormType(formType)
                 .openFormBuilderPage();
@@ -49,8 +49,8 @@ public class ManageTypeFormTests extends BaseTest{
         TypeFormPage typeFormPage = PageFactory.initElements(driver, TypeFormPage.class);
         int currentFormNumber = typeFormPage.getTotalFormNumber();
 
-        AddNewFormPage addNewFormPage = typeFormPage.addNewForm();
-        TypeFormPage typeFormPage1 = addNewFormPage.withFormName(formName)
+        NewFormPage newFormPage = typeFormPage.addNewForm();
+        TypeFormPage typeFormPage1 = newFormPage.withFormName(formName)
                 .withFormLanguage(formLanguage)
                 .withFormType(formType)
                 .openFormBuilderPage()
