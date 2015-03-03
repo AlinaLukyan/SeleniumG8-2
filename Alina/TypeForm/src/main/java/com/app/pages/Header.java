@@ -10,8 +10,14 @@ public abstract class Header {
 
     WebDriver driver;
 
-    @FindBy(how = How.XPATH, using = ".//*[@id='logo']/img")
+    @FindBy(how = How.XPATH, using = "//*[@id='logo']/img")
     WebElement logoHome;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='header']/div[1]/ul/li[2]/a/div")
+    WebElement userProfileMenu;
+
+    @FindBy(how = How.XPATH, using = "//a[@id='menu-logout']")
+    WebElement sighOutButton;
 
     public Header(WebDriver driver){
         this.driver = driver;
@@ -22,4 +28,9 @@ public abstract class Header {
         return PageFactory.initElements(driver, TypeFormPage.class);
     }
 
+    public LogInPage logOut() {
+        userProfileMenu.click();
+        sighOutButton.click();
+        return PageFactory.initElements(driver, LogInPage.class);
+    }
 }

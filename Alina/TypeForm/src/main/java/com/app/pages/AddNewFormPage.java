@@ -28,6 +28,7 @@ public class AddNewFormPage {
 
     public AddNewFormPage(WebDriver driver){
         this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
     public AddNewFormPage withFormName(String formName){
@@ -64,5 +65,4 @@ public class AddNewFormPage {
         buildButton.click();
         return PageFactory.initElements(driver, TypeFormBuilderPage.class);
     }
-
 }

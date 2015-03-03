@@ -5,8 +5,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-import java.util.concurrent.TimeUnit;
-
 
 public class BaseTest {
 
@@ -21,8 +19,6 @@ public class BaseTest {
 
     @AfterClass
     public void tearDown() {
-        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
         driver.quit();
-
     }
 }

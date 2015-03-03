@@ -1,30 +1,14 @@
 package tests;
 
 import com.app.pages.AddNewFormPage;
-import com.app.pages.LogInPage;
 import com.app.pages.TypeFormBuilderPage;
 import com.app.pages.TypeFormPage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
 
-public class FirstTestSet extends BaseTest {
-
-    /**
-     * Log in to the system first to perform any further tests
-     */
-    @BeforeClass
-    public void logIn(){
-        String username = "lukyanalina@gmail.com";
-        String password = "qwerty+1";
-
-        LogInPage logInPage = PageFactory.initElements(driver, LogInPage.class);
-        logInPage.logIn(username, password);
-    }
+public class ManageTypeFormTests extends BaseTest{
 
     /**
      * Create a new typeForm.
@@ -73,21 +57,15 @@ public class FirstTestSet extends BaseTest {
         Assert.assertEquals(typeFormPage.getTotalFormNumber(), currentFormNumber+1);
     }
 
-    @Test
-    public void signUp(){
 
-    }
-
-    @Test
+    /**
+     * TODO: not valid
+     */
+    @Test (enabled = false)
     public void deleteTypeForm(){
+        String formName = "TypeForm+1";
 
-    }
-
-
-    @Test(enabled = false)
-    public void logOut(){
-        driver.findElement(By.xpath(".//*[@id='header']/div[1]/ul/li[2]/a/div")).click();
-        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
-        driver.findElement(By.xpath(".//*[@id='menu-logout']")).click();
+        TypeFormPage typeFormPage = PageFactory.initElements(driver, TypeFormPage.class);
+        typeFormPage.deleteFormsByName(formName);
     }
 }

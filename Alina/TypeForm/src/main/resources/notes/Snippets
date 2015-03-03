@@ -1,0 +1,19 @@
+
+
+driver.getTitle();
+
+    
+driver.getCurrentUrl().equals("https://www.google.com/doodles");
+
+
+WebDriverWait wait = new WebDriverWait(driver, 200);
+wait.until(ExpectedConditions.visibilityOf(formEntered));
+
+
+Select select = new Select(driver.findElement(By.xpath("//path_to_drop_down")));
+select.deselectAll();
+select.selectByVisibleText("Value1");
+
+
+driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
+    
