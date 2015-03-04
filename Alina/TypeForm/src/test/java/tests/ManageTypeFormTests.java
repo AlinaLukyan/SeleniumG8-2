@@ -12,6 +12,7 @@ public class ManageTypeFormTests extends BaseTest{
 
     /**
      * Create a new typeForm.
+     * Start from scratch in your creation. No templates used.
      * User gets redirected to form builder on a new form creation.
      * New form name appears to be visible on builder screen
      */
@@ -32,7 +33,6 @@ public class ManageTypeFormTests extends BaseTest{
 
         Assert.assertTrue(typeFormBuilderPage.getFormEntered().getText().contains(formName));
     }
-
 
     /**
      * Create a new typeForm.

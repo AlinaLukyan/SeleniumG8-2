@@ -9,7 +9,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -20,7 +19,8 @@ public class TypeFormPage {
     WebElements element;
     Actions action;
 
-    @FindBy(how = How.XPATH, using = "//ul[@id='forms']/li[contains(@class,'add admin-button')]")
+    @FindBy(how = How.XPATH, using = ".//*[@id='forms']/li[1]/div[1]/span")
+            //".//*[@id='forms']//div[@class='upper admin-button turquoise']")
     WebElement newTypeFormButton;
 
     @FindBy(how = How.XPATH, using = "//ul[@id='forms']/li[contains(@class,'quickyform item active')]")
@@ -35,14 +35,19 @@ public class TypeFormPage {
     public TypeFormPage(WebDriver driver){
         this.driver = driver;
         element = new WebElements(driver);
+        action = new Actions(driver);
     }
 
     public int getTotalFormNumber() {
         return activeForms.size();
     }
 
+    /**
+     * Start from scratch in creating your new type-form
+     * @return
+     */
     public NewFormPage addNewForm() {
-        newTypeFormButton.click();
+        action.moveToElement(newTypeFormButton).click().build().perform();
         return PageFactory.initElements(driver, NewFormPage.class);
     }
 
@@ -62,10 +67,10 @@ public class TypeFormPage {
         for(WebElement element : formNames) {
             if (element.getText().equals(formName)) {
 
-                action.moveToElement(driver.findElement(By.xpath(".//*[@id='form-386001']/div[2]"))).build().perform();
-
-                wait.until(ExpectedConditions.visibilityOf(deleteButton));
-                deleteButton.click();
+                action.moveToElement(driver.findElement(By.xpath(".//*[@id='form-386001']/div[2]"))).click().build().perform();
+//
+//                wait.until(ExpectedConditions.visibilityOf(deleteButton));
+//                deleteButton.click();
             }
         }
 

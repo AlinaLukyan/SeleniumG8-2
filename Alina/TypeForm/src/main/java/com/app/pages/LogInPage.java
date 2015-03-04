@@ -23,9 +23,9 @@ public class LogInPage {
     }
 
     public void logIn(String username, String password){
-        usernameInput.clear();
+//        usernameInput.clear();
         usernameInput.sendKeys(username);
-        passwordInput.clear();
+//        passwordInput.clear();
         passwordInput.sendKeys(password);
         loginButton.click();
     }
