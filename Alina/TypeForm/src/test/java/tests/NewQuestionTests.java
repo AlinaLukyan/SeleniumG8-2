@@ -1,17 +1,29 @@
 package tests;
 
 
+import com.app.pages.TypeFormBuilderPage;
+import com.app.pages.TypeFormPage;
+import com.app.pages.questions.WelcomeScreenConstructorPage;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class NewQuestionTests extends BaseTest {
 
-    /**
-     * Positive tests
-     */
 
+    /**
+     * TODO:
+     */
     @Test
     public void addWelcomeScreen() {
+        String welcomeText = "Welcome text goes here. This is just a test";
 
+        TypeFormPage typeFormPage = PageFactory.initElements(driver, TypeFormPage.class);
+        TypeFormBuilderPage typeFormBuilderPage = typeFormPage.enterNewTypeForm();
+        WelcomeScreenConstructorPage welcomeScreenConstructorPage = typeFormBuilderPage.enterWelcomeScreenConstructor();
+        welcomeScreenConstructorPage.addNewWelcomeScreen(welcomeText);
+
+        Assert.assertEquals(welcomeScreenConstructorPage.getPreviewWelcomeText(), welcomeText, "Both the text messages, entered and displayed, are equal");
     }
 
     @Test

@@ -9,6 +9,8 @@ public class LogInPage {
 
     WebDriver driver;
 
+//    @FindBy(how = How.XPATH, using = ".//input[@id='_username']")
+
     @FindBy(how = How.XPATH, using = ".//input[@id='_username']")
     WebElement usernameInput;
 
@@ -23,9 +25,9 @@ public class LogInPage {
     }
 
     public void logIn(String username, String password){
-//        usernameInput.clear();
+        usernameInput.clear();
         usernameInput.sendKeys(username);
-//        passwordInput.clear();
+        passwordInput.clear();
         passwordInput.sendKeys(password);
         loginButton.click();
     }

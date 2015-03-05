@@ -12,6 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class TypeFormPage {
 
@@ -19,8 +20,7 @@ public class TypeFormPage {
     WebElements element;
     Actions action;
 
-    @FindBy(how = How.XPATH, using = ".//*[@id='forms']/li[1]/div[1]/span")
-            //".//*[@id='forms']//div[@class='upper admin-button turquoise']")
+    @FindBy(how = How.XPATH, using = ".//*[@id='forms']//div[@class='upper admin-button turquoise']")
     WebElement newTypeFormButton;
 
     @FindBy(how = How.XPATH, using = "//ul[@id='forms']/li[contains(@class,'quickyform item active')]")
@@ -31,6 +31,10 @@ public class TypeFormPage {
 
     @FindBy(how = How.XPATH, using = ".//*[@id='form-386001']/ul/li[4]/a")
     WebElement deleteButton;
+
+    @FindBy(how = How.XPATH, using = "//a[contains(@class,'admin-button turquoise add-fields')]")
+    List<WebElement> emptyTypeForms;
+
 
     public TypeFormPage(WebDriver driver){
         this.driver = driver;
@@ -73,9 +77,21 @@ public class TypeFormPage {
 //                deleteButton.click();
             }
         }
-
         return PageFactory.initElements(driver, ConfirmDeletePage.class);
-
     }
 
+    /**
+     * Find any empty type-form to add new questions in there.
+     * If nothing is found create a new one.
+     * @return
+     */
+    public TypeFormBuilderPage enterNewTypeForm() {
+        if (emptyTypeForms.size() == 0) {
+            addNewForm();
+        } else {
+            emptyTypeForms.get(0).click();
+        }
+        driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
+        return PageFactory.initElements(driver, TypeFormBuilderPage.class);
+    }
 }
