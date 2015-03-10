@@ -1,10 +1,9 @@
 package com.app.pages;
 
+import com.app.libs.ConfigData;
 import com.app.pages.questions.WelcomeScreenConstructorPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.concurrent.TimeUnit;
@@ -12,11 +11,8 @@ import java.util.concurrent.TimeUnit;
 
 public class TypeFormBuilderPage extends Header {
 
-    @FindBy(how = How.XPATH, using = ".//*[@id='current-form']")
-    WebElement formEntered;
-
-    @FindBy(how = How.XPATH, using = ".//*[@id='sidebar']//span[contains(@class,'admin-button green')]")
-    WebElement welcomeScreenButton;
+    WebElement formEntered = driver.findElement(ConfigData.ui("TypeFormBuilderPage.formEntered"));
+    WebElement welcomeScreenButton = driver.findElement(ConfigData.ui("TypeFormBuilderPage.welcomeScreenButton"));
 
     public TypeFormBuilderPage(WebDriver driver) {
         super(driver);
@@ -33,7 +29,6 @@ public class TypeFormBuilderPage extends Header {
 
     public WelcomeScreenConstructorPage enterWelcomeScreenConstructor() {
         welcomeScreenButton.click();
-//        driver.manage().timeouts().implicitlyWait(500, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
         return PageFactory.initElements(driver, WelcomeScreenConstructorPage.class);
     }

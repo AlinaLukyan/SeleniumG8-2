@@ -1,23 +1,18 @@
 package com.app.pages;
 
+import com.app.libs.ConfigData;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public abstract class Header {
 
     WebDriver driver;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='logo']/img")
-    WebElement logoHome;
+    private WebElement logoHome = driver.findElement(ConfigData.ui("Header.logoHome"));
+    private WebElement userProfileMenu = driver.findElement(ConfigData.ui("Header.userProfileMenu"));
+    private WebElement sighOutButton = driver.findElement(ConfigData.ui("Header.sighOutButton"));
 
-    @FindBy(how = How.XPATH, using = "//*[@id='header']/div[1]/ul/li[2]/a/div")
-    WebElement userProfileMenu;
-
-    @FindBy(how = How.XPATH, using = "//a[@id='menu-logout']")
-    WebElement sighOutButton;
 
     public Header(WebDriver driver){
         this.driver = driver;

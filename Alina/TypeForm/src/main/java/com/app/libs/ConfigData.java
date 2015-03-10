@@ -1,45 +1,53 @@
 package com.app.libs;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-
 
 /*
  *  That class provides static methods for getting values from Config and UI mapping files
  */
-public class ConfigData {												//new class created
-    public static String cfgFile = "src/config.properties";				//class variable added (path to the file) - DB
-    public static String uiMappingFile = "src/UIMapping.properties";	//class variable added (path to the file)
-
-    private enum Locator {
-        ID,
-        XPATH,
-        NAME,
-        LINKTEXT,
-        TAGNAME,
-        CLASSNAME,
-        CSSSELECTOR,
-        PARTIALLINKTEXT
-    }
+public class ConfigData {
+    private static final String CONFIG_FILE = "src/config.properties";				//DB connection details, default values for waits
+    private static final String UI_MAPPING_FILE = "src/UIMapping.properties";
 
     /*
-     * Return value from .properties file
+     * Returns value from .properties file
      */
-    public static String getValueFromFile(String key, String fileName) //getter
-            throws IOException {
-        Properties p = new Properties(); //The Properties class represents a persistent set of properties. The Properties can be saved to a stream or loaded from a stream. Each key and its corresponding value in the property list is a string.
-        // Create stream for reading from file
-        FileInputStream cfg = new FileInputStream(fileName); //A FileInputStream obtains input bytes
-        // from a file in a file system. FileInputStream is meant for reading streams of raw bytes such as image data. For reading streams of characters, consider using FileReader.
-        // Load Properties from input stream
-        p.load(cfg);
-        cfg.close();
+    public static String getValueFromFile(String key, String fileName) {
 
-        // Return value for the property
-        return (p.getProperty(key));
+        // Property data can be saved to a stream or loaded from a stream.
+        // Each key and its corresponding value in the property list is a string.
+
+        Properties properties = new Properties();
+        // Create stream for reading from file
+        FileInputStream inputStream = null;
+
+        try {
+            // FileInputStream obtains input bytes from a file in a file system.
+            // For reading streams of characters, consider using FileReader.
+            inputStream = new FileInputStream(fileName);
+
+            // Load Properties from input stream
+            properties.load(inputStream);
+
+        } catch (FileNotFoundException e) {
+            Assert.fail(fileName + " not found");
+        } catch (IOException e) {
+            Assert.fail();
+        } finally {
+            if (inputStream != null)
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace(); //log4j
+                }
+        }
+        return properties.getProperty(key);
     }
 
     /*
@@ -47,9 +55,9 @@ public class ConfigData {												//new class created
      * String. We should take care of value's type by himself when will use
      * config data value in the test.
      */
-    public static String getUiMappingValue(String key) throws IOException {
+    public static String getUiMappingValue(String key) {
 
-        return (getValueFromFile(key, uiMappingFile));
+        return (getValueFromFile(key, UI_MAPPING_FILE));
     }
 
     /*
@@ -57,55 +65,50 @@ public class ConfigData {												//new class created
      * String. We should take care of value's type by himself when will use
      * config data value in the test.
      */
-    public static String getCfgValue(String key) throws IOException {
+    public static String getCfgValue(String key) {
 
-        return (getValueFromFile(key, cfgFile));
+        return (getValueFromFile(key, CONFIG_FILE));
     }
 
     /*
-     * Return By class with finding method and target for WebElement from UI mapping file
+     * The method picks a string by its key from the file and reads its locatorType and locatorValue
+     * It returns a By locator for the WebElement from UI mapping file
      */
-    public static By ui(String key) throws IOException, ClassNotFoundException,
-            IllegalAccessException, InstantiationException {
-        // Get WebElement's locator from UI mapping file and divide it to
-        // finding method and target
-        String[] partsOfLocator = getValueFromFile(key, uiMappingFile).split(
-                "\"");
-        String findMethod = partsOfLocator[0].substring(0,
-                partsOfLocator[0].length() - 1);
-        String target = partsOfLocator[1];
+    public static By ui(String key) {
+        String[] splitValue = getValueFromFile(key, UI_MAPPING_FILE).split("\"");
+        String locatorType = splitValue[0].substring(0, splitValue[0].length() - 1);
+        String locatorValue = splitValue[1];
 
-        // Return By class with appropriate method and target
+        By currentLocator = null;
 
-        Locator currentLocator = Locator.valueOf(findMethod.toUpperCase());
-
-        By currentBy = null;
-
-        switch (currentLocator) {
-            case ID:
-                currentBy = By.id(target);
+        switch (locatorType) {
+            case "id":
+                currentLocator = By.id(locatorValue);
                 break;
-            case XPATH:
-                currentBy = By.xpath(target);
+            case "xpath":
+                currentLocator = By.xpath(locatorValue);
                 break;
-            case NAME:
-                currentBy = By.name(target);
+            case "name":
+                currentLocator = By.name(locatorValue);
                 break;
-            case TAGNAME:
-                currentBy = By.tagName(target);
+            case "tagName":
+                currentLocator = By.tagName(locatorValue);
                 break;
-            case CLASSNAME:
-                currentBy = By.className(target);
+            case "className":
+                currentLocator = By.className(locatorValue);
                 break;
-            case CSSSELECTOR:
-                currentBy = By.cssSelector(target);
+            case "cssSelector":
+                currentLocator = By.cssSelector(locatorValue);
                 break;
-            case LINKTEXT:
-                currentBy = By.linkText(target);
+            case "linkText":
+                currentLocator = By.linkText(locatorValue);
                 break;
-            case PARTIALLINKTEXT:
-                currentBy = By.partialLinkText(target);
+            case "partialLinkText":
+                currentLocator = By.partialLinkText(locatorValue);
+                break;
+            default:
+                System.out.println(locatorType + " locator is not supported");
         }
-        return currentBy;
+        return currentLocator;
     }
 }

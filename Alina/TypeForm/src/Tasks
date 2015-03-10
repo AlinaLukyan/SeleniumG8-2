@@ -2,7 +2,8 @@
 ToDo:
 - Rewrite method to ConfigData.ui
 - WebDriverFactory, implement in own project
--
+- Asserts for every test
+- try-catch if needed
 
 
 1. Подправить ConfigData Class
@@ -14,11 +15,6 @@ ToDo:
 Согласно твоему GitHub
 1. ConfigData не переделан
 2. Почистить от exceptions WebElements
-3. Как бы да но.... хм...
-public void refreshPage() {
-        driver.get(driver.getCurrentUrl());
-    }
-Задание, найди разние между геттом и рефрешом
 4. driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 Сделай константу для стандартного ожидания
 5. public WelcomeScreenConstructorPage enterWelcomeScreenConstructor() {
@@ -42,6 +38,11 @@ Notes:
 WebElements elements;
 private static By button = By.xpath("");
 elements.clickButton("//input//");
+- try {
+} catch() {
+Assert.fail("Message")
+}
+Use it in ConfigData, WebElements
 
 
 

@@ -16,13 +16,13 @@ import static com.app.libs.ConfigData.ui;
 public class WebElements {
 
     WebDriver driver;
+    public static final int DEFAULT_WAIT = 30;
 
     public WebElements(WebDriver driver){
         this.driver = driver;
     }
 
     public void inputTest(String fieldLocator, String text) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
-//        WebElement inputField = driver.findElement(By.xpath(fieldLocator));
         WebElement inputField = driver.findElement(ui(fieldLocator));
         inputField.clear();
         inputField.sendKeys(text);
@@ -82,7 +82,7 @@ public class WebElements {
     public boolean isElementPresent(String elementLocator) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
         driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         boolean result = driver.findElements(ui(elementLocator)).size() > 0;
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT, TimeUnit.SECONDS);
         return result;
 
 //        try {

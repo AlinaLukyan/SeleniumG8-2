@@ -28,7 +28,8 @@ public class NewQuestionTests extends BaseTest {
 
     @Test
     public void addShortTextQuestion() {
-        
+        Assert.fail();
+
     }
 
     @Test

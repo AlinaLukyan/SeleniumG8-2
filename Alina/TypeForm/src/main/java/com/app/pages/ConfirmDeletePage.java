@@ -1,9 +1,8 @@
 package com.app.pages;
 
+import com.app.libs.ConfigData;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 
 
 
@@ -11,11 +10,9 @@ public class ConfirmDeletePage {
 
     WebDriver driver;
 
-    @FindBy(how = How.XPATH, using = "//a[@id='dialog-ok']")
-    WebElement yesButton;
+    private WebElement yesButton = driver.findElement(ConfigData.ui("ConfirmDeletePage.yesButton"));
+    private WebElement noButton = driver.findElement(ConfigData.ui("ConfirmDeletePage.noButton"));
 
-    @FindBy(how = How.XPATH, using = "//a[@id='dialog-cancel']")
-    WebElement noButton;
 
     public ConfirmDeletePage(WebDriver driver) {
         this.driver = driver;

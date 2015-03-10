@@ -1,10 +1,9 @@
 package com.app.pages;
 
+import com.app.libs.ConfigData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
@@ -13,18 +12,10 @@ public class NewFormPage {
 
     WebDriver driver;
 
-    @FindBy(how = How.XPATH, using = ".//*[@id='quickyform_name']")
-    WebElement formNameInput;
-
-    @FindBy(how = How.XPATH, using = "//*[@id='s2id_quickyform_language']/a/div/b")
-    WebElement formLanguageSelectButton;
-
-    @FindBy(how = How.XPATH, using = ".//*[@id='s2id_quickyform_category']/a/div/b")
-    WebElement formTypeSelectButton;
-
-    @FindBy(how = How.XPATH, using = ".//*[@id='add-form']/form/div[4]/input")
-    WebElement buildButton;
-
+    WebElement formNameInput = driver.findElement(ConfigData.ui("NewFormPage.formNameInput"));
+    WebElement formLanguageSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formLanguageSelectButton"));
+    WebElement formTypeSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formTypeSelectButton"));
+    WebElement buildButton = driver.findElement(ConfigData.ui("NewFormPage.buildButton"));
 
     public NewFormPage(WebDriver driver){
         this.driver = driver;

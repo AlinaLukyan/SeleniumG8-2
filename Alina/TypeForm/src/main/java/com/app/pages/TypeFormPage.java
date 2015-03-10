@@ -1,13 +1,12 @@
 package com.app.pages;
 
 
+import com.app.libs.ConfigData;
 import com.app.libs.WebElements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -20,20 +19,11 @@ public class TypeFormPage {
     WebElements element;
     Actions action;
 
-    @FindBy(how = How.XPATH, using = ".//*[@id='forms']//div[@class='upper admin-button turquoise']")
-    WebElement newTypeFormButton;
-
-    @FindBy(how = How.XPATH, using = "//ul[@id='forms']/li[contains(@class,'quickyform item active')]")
-    List<WebElement> activeForms;
-
-    @FindBy(how = How.XPATH, using = "//ul[@id='forms']")
-    WebElement formGrid;
-
-    @FindBy(how = How.XPATH, using = ".//*[@id='form-386001']/ul/li[4]/a")
-    WebElement deleteButton;
-
-    @FindBy(how = How.XPATH, using = "//a[contains(@class,'admin-button turquoise add-fields')]")
-    List<WebElement> emptyTypeForms;
+    WebElement newTypeFormButton = driver.findElement(ConfigData.ui("TypeFormPage.newTypeFormButton"));
+    List<WebElement> activeForms = driver.findElements(ConfigData.ui("TypeFormPage.activeForms"));
+    WebElement formGrid = driver.findElement(ConfigData.ui("TypeFormPage.formGrid"));
+    WebElement deleteButton = driver.findElement(ConfigData.ui("TypeFormPage.deleteButton"));
+    List<WebElement> emptyTypeForms = driver.findElements(ConfigData.ui("TypeFormPage.emptyTypeForms"));
 
 
     public TypeFormPage(WebDriver driver){
