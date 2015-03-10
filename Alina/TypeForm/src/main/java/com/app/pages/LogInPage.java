@@ -8,8 +8,7 @@ import org.openqa.selenium.support.How;
 public class LogInPage {
 
     WebDriver driver;
-
-//    @FindBy(how = How.XPATH, using = ".//input[@id='_username']")
+//    WebElements elements;
 
     @FindBy(how = How.XPATH, using = ".//input[@id='_username']")
     WebElement usernameInput;
@@ -22,6 +21,7 @@ public class LogInPage {
 
     public LogInPage(WebDriver driver) {
         this.driver = driver;
+//        elements = new WebElements(driver);
     }
 
     public void logIn(String username, String password){

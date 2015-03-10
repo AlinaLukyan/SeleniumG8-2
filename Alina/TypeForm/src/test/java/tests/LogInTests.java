@@ -3,7 +3,6 @@ package tests;
 import com.app.pages.Header;
 import com.app.pages.LogInPage;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class LogInTests extends BaseTest {
@@ -11,7 +10,7 @@ public class LogInTests extends BaseTest {
     /**
      * Log in to the system first to perform any further tests
      */
-    @BeforeClass
+    @Test
     public void logIn(){
         String username = "lukyanalina@gmail.com";
         String password = "qwerty+1";

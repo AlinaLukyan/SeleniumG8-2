@@ -28,7 +28,7 @@ public class NewQuestionTests extends BaseTest {
 
     @Test
     public void addShortTextQuestion() {
-
+        
     }
 
     @Test

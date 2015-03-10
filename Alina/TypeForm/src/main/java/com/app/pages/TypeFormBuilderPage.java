@@ -33,8 +33,8 @@ public class TypeFormBuilderPage extends Header {
 
     public WelcomeScreenConstructorPage enterWelcomeScreenConstructor() {
         welcomeScreenButton.click();
-        driver.manage().timeouts().implicitlyWait(500, TimeUnit.SECONDS);
-//        driver.manage().timeouts().pageLoadTimeout(1000, TimeUnit.SECONDS);
+//        driver.manage().timeouts().implicitlyWait(500, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
         return PageFactory.initElements(driver, WelcomeScreenConstructorPage.class);
     }
 }
