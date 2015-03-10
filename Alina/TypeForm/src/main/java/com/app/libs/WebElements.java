@@ -87,7 +87,7 @@ public class WebElements {
 
 //        try {
 //            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-//            driver.findElement(by);
+//            driver.findElement(By.xpath(elementLocator));
 //            return true;
 //        } catch (NoSuchElementException e) {
 //            return false;
