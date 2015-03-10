@@ -73,7 +73,7 @@ public class WebElements {
      * The method refreshes a current page
      */
     public void refreshPage() {
-        driver.get(driver.getCurrentUrl());
+        driver.navigate().refresh();
     }
 
     /**

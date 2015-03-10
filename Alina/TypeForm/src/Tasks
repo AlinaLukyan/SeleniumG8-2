@@ -37,6 +37,7 @@ public void refreshPage() {
 Notes:
 - catch(Exception e) - catches any type of exception
 - application.properties (default wait) - default framework value is 0
+- Singleton pattern to run one driver for multiple tests
 -
 WebElements elements;
 private static By button = By.xpath("");

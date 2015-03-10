@@ -13,6 +13,7 @@ public class BaseTest {
 
     WebDriver driver;
 
+//    @AfterTest
     @BeforeClass
     public void setUp(){
         driver = new FirefoxDriver();
