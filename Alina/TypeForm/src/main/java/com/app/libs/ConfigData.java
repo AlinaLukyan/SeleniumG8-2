@@ -14,6 +14,17 @@ public class ConfigData {												//new class created
     public static String cfgFile = "src/config.properties";				//class variable added (path to the file) - DB
     public static String uiMappingFile = "src/UIMapping.properties";	//class variable added (path to the file)
 
+    private enum Locator {
+        ID,
+        XPATH,
+        NAME,
+        LINKTEXT,
+        TAGNAME,
+        CLASSNAME,
+        CSSSELECTOR,
+        PARTIALLINKTEXT
+    }
+
     /*
      * Return value from .properties file
      */
@@ -65,35 +76,36 @@ public class ConfigData {												//new class created
         String target = partsOfLocator[1];
 
         // Return By class with appropriate method and target
-        if (findMethod.equals("id")) {
-            return By.id(target);
-        } else {
-            if (findMethod.equals("xpath")) {
-                return By.xpath(target);
-            } else {
-                if (findMethod.equals("name")) {
-                    return By.name(target);
-                } else {
-                    if (findMethod.equals("linkText")) {
-                        return By.linkText(target);
-                    } else {
-                        if (findMethod.equals("tagName")) {
-                            return By.tagName(target);
-                        } else {
-                            if (findMethod.equals("className")) {
-                                return By.className(target);
-                            } else {
-                                if (findMethod.equals("cssSelector")) {
-                                    return By.cssSelector(target);
-                                } else {
-                                    return By.partialLinkText(target);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 
+        Locator currentLocator = Locator.valueOf(findMethod.toUpperCase());
+
+        By currentBy = null;
+
+        switch (currentLocator) {
+            case ID:
+                currentBy = By.id(target);
+                break;
+            case XPATH:
+                currentBy = By.xpath(target);
+                break;
+            case NAME:
+                currentBy = By.name(target);
+                break;
+            case TAGNAME:
+                currentBy = By.tagName(target);
+                break;
+            case CLASSNAME:
+                currentBy = By.className(target);
+                break;
+            case CSSSELECTOR:
+                currentBy = By.cssSelector(target);
+                break;
+            case LINKTEXT:
+                currentBy = By.linkText(target);
+                break;
+            case PARTIALLINKTEXT:
+                currentBy = By.partialLinkText(target);
+        }
+        return currentBy;
+    }
 }
