@@ -1,2 +1,4 @@
+tests/NewQuestionTests.class
 tests/BaseTest.class
-tests/FirstTestSet.class
+tests/LogInTests.class
+tests/ManageTypeFormTests.class

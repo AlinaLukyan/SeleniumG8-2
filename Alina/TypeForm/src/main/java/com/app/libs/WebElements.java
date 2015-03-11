@@ -3,8 +3,8 @@ package com.app.libs;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -20,16 +20,17 @@ public class WebElements {
 
     public WebElements(WebDriver driver){
         this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
-    public void inputTest(String fieldLocator, String text) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
+    public void inputText(String fieldLocator, String text) {
         WebElement inputField = driver.findElement(ui(fieldLocator));
         inputField.clear();
         inputField.sendKeys(text);
         System.out.println(text + " was inputted into a field with the locator <" + inputField + ">");
     }
 
-    public void clearTextInput(String textLocator) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
+    public void clearTextInput(String textLocator) {
         driver.findElement(ui(textLocator)).clear();
         System.out.println("Text was cleared from a field with the locator <" + textLocator + ">");
     }
@@ -37,7 +38,7 @@ public class WebElements {
     /**
      * The method clicks on a button by its locator
      */
-    public void clickButton(String buttonLocator) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
+    public void clickButton(String buttonLocator) {
         driver.findElement(ui(buttonLocator)).click();
         System.out.println("Button with locator <" + buttonLocator + "> was clicked");
     }
@@ -45,12 +46,12 @@ public class WebElements {
     /**
      * The method clicks on a link by its locator
      */
-    public void clickLink(String linkLocator) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
+    public void clickLink(String linkLocator) {
         driver.findElement(ui(linkLocator)).click();
         System.out.println("Button with locator <" + linkLocator + "> was clicked");
     }
 
-    public void selectCheckBox(String checkBoxSetLocator, boolean checkBoxState) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
+    public void selectCheckBox(String checkBoxSetLocator, boolean checkBoxState) {
         WebElement checkBox = driver.findElement(ui(checkBoxSetLocator));
         boolean currentState = checkBox.isSelected();
 
@@ -79,7 +80,7 @@ public class WebElements {
     /**
      * The method checks if an element is present on the page
      */
-    public boolean isElementPresent(String elementLocator) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
+    public boolean isElementPresent(String elementLocator) {
         driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         boolean result = driver.findElements(ui(elementLocator)).size() > 0;
         driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT, TimeUnit.SECONDS);
@@ -100,7 +101,7 @@ public class WebElements {
     /**
      * The method implements selecting elements from a drop-down list
      */
-    public void selectFromDropDown(String selectButtonLocator, String elementListLocator, String elementText) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
+    public void selectFromDropDown(String selectButtonLocator, String elementListLocator, String elementText) {
         WebElement selectButton = driver.findElement(ui(selectButtonLocator));
         selectButton.click();
 
@@ -116,7 +117,7 @@ public class WebElements {
     /**
      * The method implements selecting a radio-button from a radio-button block
      */
-    public void selectRadioButton(String radioElementsLocator, int option) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
+    public void selectRadioButton(String radioElementsLocator, int option) {
         if (option <= 0) {
             throw new IndexOutOfBoundsException(option + " is less or equal ZERO");
         } else {

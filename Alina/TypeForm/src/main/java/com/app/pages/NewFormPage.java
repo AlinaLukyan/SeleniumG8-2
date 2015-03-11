@@ -11,24 +11,36 @@ import java.util.List;
 public class NewFormPage {
 
     WebDriver driver;
+//    WebElements elements;
 
-    WebElement formNameInput = driver.findElement(ConfigData.ui("NewFormPage.formNameInput"));
-    WebElement formLanguageSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formLanguageSelectButton"));
-    WebElement formTypeSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formTypeSelectButton"));
-    WebElement buildButton = driver.findElement(ConfigData.ui("NewFormPage.buildButton"));
+    WebElement formNameInput;
+    WebElement formLanguageSelectButton;
+    WebElement formTypeSelectButton;
+    WebElement buildButton;
 
     public NewFormPage(WebDriver driver){
         this.driver = driver;
+//        initElements();
         PageFactory.initElements(driver, this);
+//        elements = new WebElements(driver);
+    }
+
+    private void initElements() {
+        formNameInput = driver.findElement(ConfigData.ui("NewFormPage.formNameInput"));
+        formLanguageSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formLanguageSelectButton"));
+        formTypeSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formTypeSelectButton"));
+        buildButton = driver.findElement(ConfigData.ui("NewFormPage.buildButton"));
     }
 
     public NewFormPage withFormName(String formName){
+        formNameInput = driver.findElement(ConfigData.ui("NewFormPage.formNameInput"));
         formNameInput.clear();
         formNameInput.sendKeys(formName);
         return this;
     }
 
     public NewFormPage withFormLanguage(String formLanguage){
+        formLanguageSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formLanguageSelectButton"));
         formLanguageSelectButton.click();
         List<WebElement> options = formLanguageSelectButton.findElements(By.xpath("//div[@class='select2-result-label']"));
         for (WebElement element : options){
@@ -41,6 +53,7 @@ public class NewFormPage {
     }
 
     public NewFormPage withFormType(String formType){
+        formTypeSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formTypeSelectButton"));
         formTypeSelectButton.click();
         List<WebElement> options = formTypeSelectButton.findElements(By.xpath("//div[@class='select2-result-label']"));
         for (WebElement element : options) {
@@ -53,6 +66,7 @@ public class NewFormPage {
     }
 
     public TypeFormBuilderPage openFormBuilderPage(){
+        buildButton = driver.findElement(ConfigData.ui("NewFormPage.buildButton"));
         buildButton.click();
         return PageFactory.initElements(driver, TypeFormBuilderPage.class);
     }

@@ -1,19 +1,14 @@
 
 ToDo:
-- Rewrite method to ConfigData.ui
 - WebDriverFactory, implement in own project
 - Asserts for every test
 - try-catch if needed
 
 
-1. Подправить ConfigData Class
-2. Реализвать нахождение елементов через ConfigData Class
-3. Написать тесты для Ваших тест кейсов использую Page Object Pattern
 4. Принести свой WebElements class (если надо дописать метод по дропдауну, найдите сайт где он есть, напишите и проверьте)
 Замечания - тесты должны соблюдать строгую логику - если после метода Вы переходите на след страницу метод должен возвращать объект это странице
 
 Согласно твоему GitHub
-1. ConfigData не переделан
 2. Почистить от exceptions WebElements
 4. driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 Сделай константу для стандартного ожидания

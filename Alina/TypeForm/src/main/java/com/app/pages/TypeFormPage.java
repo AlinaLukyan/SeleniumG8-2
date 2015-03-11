@@ -19,20 +19,31 @@ public class TypeFormPage {
     WebElements element;
     Actions action;
 
-    WebElement newTypeFormButton = driver.findElement(ConfigData.ui("TypeFormPage.newTypeFormButton"));
-    List<WebElement> activeForms = driver.findElements(ConfigData.ui("TypeFormPage.activeForms"));
-    WebElement formGrid = driver.findElement(ConfigData.ui("TypeFormPage.formGrid"));
-    WebElement deleteButton = driver.findElement(ConfigData.ui("TypeFormPage.deleteButton"));
-    List<WebElement> emptyTypeForms = driver.findElements(ConfigData.ui("TypeFormPage.emptyTypeForms"));
+    WebElement newTypeFormButton;
+    List<WebElement> activeForms;
+    WebElement formGrid;
+    WebElement deleteButton;
+    List<WebElement> emptyTypeForms;
 
 
     public TypeFormPage(WebDriver driver){
         this.driver = driver;
+//        initElements();
+        PageFactory.initElements(driver, this);
         element = new WebElements(driver);
         action = new Actions(driver);
     }
 
+    private void initElements() {
+//        newTypeFormButton = driver.findElement(ConfigData.ui("TypeFormPage.newTypeFormButton"));
+        activeForms = driver.findElements(ConfigData.ui("TypeFormPage.activeForms"));
+        formGrid = driver.findElement(ConfigData.ui("TypeFormPage.formGrid"));
+        deleteButton = driver.findElement(ConfigData.ui("TypeFormPage.deleteButton"));
+        emptyTypeForms = driver.findElements(ConfigData.ui("TypeFormPage.emptyTypeForms"));
+    }
+
     public int getTotalFormNumber() {
+        activeForms = driver.findElements(ConfigData.ui("TypeFormPage.activeForms"));
         return activeForms.size();
     }
 
@@ -41,8 +52,9 @@ public class TypeFormPage {
      * @return
      */
     public NewFormPage addNewForm() {
+        newTypeFormButton = driver.findElement(ConfigData.ui("TypeFormPage.newTypeFormButton"));
         action.moveToElement(newTypeFormButton).click().build().perform();
-        return PageFactory.initElements(driver, NewFormPage.class);
+        return new NewFormPage(driver);
     }
 
     /**
@@ -50,7 +62,7 @@ public class TypeFormPage {
      * @param formName
      */
     public ConfirmDeletePage deleteFormsByName(String formName) {
-
+        formGrid = driver.findElement(ConfigData.ui("TypeFormPage.formGrid"));
         action = new Actions(driver);
         WebDriverWait wait = new WebDriverWait(driver, 100);
 

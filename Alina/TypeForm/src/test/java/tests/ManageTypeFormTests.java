@@ -3,7 +3,6 @@ package tests;
 import com.app.pages.NewFormPage;
 import com.app.pages.TypeFormBuilderPage;
 import com.app.pages.TypeFormPage;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -23,7 +22,7 @@ public class ManageTypeFormTests extends BaseTest{
         String formType = "Pro";
         String formLanguage = "English";
 
-        TypeFormPage typeFormPage = PageFactory.initElements(driver, TypeFormPage.class);
+        TypeFormPage typeFormPage = new TypeFormPage(driver);//PageFactory.initElements(driver, TypeFormPage.class);
 
         NewFormPage newFormPage = typeFormPage.addNewForm();
         TypeFormBuilderPage typeFormBuilderPage = newFormPage.withFormName(formName)
@@ -46,7 +45,7 @@ public class ManageTypeFormTests extends BaseTest{
         String formType = "Pro";
         String formLanguage = "English";
 
-        TypeFormPage typeFormPage = PageFactory.initElements(driver, TypeFormPage.class);
+        TypeFormPage typeFormPage = new TypeFormPage(driver);
         int currentFormNumber = typeFormPage.getTotalFormNumber();
 
         NewFormPage newFormPage = typeFormPage.addNewForm();
@@ -63,11 +62,11 @@ public class ManageTypeFormTests extends BaseTest{
     /**
      * TODO: not valid
      */
-    @Test (enabled = false)
+    @Test(enabled = false)
     public void deleteTypeForm(){
         String formName = "TypeForm+1";
 
-        TypeFormPage typeFormPage = PageFactory.initElements(driver, TypeFormPage.class);
+        TypeFormPage typeFormPage = new TypeFormPage(driver);
         typeFormPage.deleteFormsByName(formName);
     }
 }

@@ -23,6 +23,7 @@ public class ConfigData {
         // Property data can be saved to a stream or loaded from a stream.
         // Each key and its corresponding value in the property list is a string.
 
+
         Properties properties = new Properties();
         // Create stream for reading from file
         FileInputStream inputStream = null;
