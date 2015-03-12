@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath*:UIMapping.properties"/>
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location">
+            <value>classpath:UIMapping.properties</value>
+        </property>
+    </bean>
+
+    <bean id="driver" class="org.openqa.selenium.firefox.FirefoxDriver"></bean>
+
+    <!--<bean id="baseTest" class="tests.BaseTest" />-->
+        <!--<property name="url" value="${url}"/>-->
+        <!--<property name="userName" value="${userName}"/>-->
+        <!--<property name="password" value="{userPassword}"/>-->
+    <!--</bean>-->
+
+    <bean id="loginPage" class="com.app.pages.LogInPage">
+        <constructor-arg ref="driver"/>
+        <property name="userInputLocator" value="${LogInPage.usernameInput}"/>
+        <property name="passwordInputLocator" value="${LogInPage.passwordInput}"/>
+        <property name="loginButtonLocator" value="${LogInPage.loginButton}"/>
+    </bean>
+
+</beans>

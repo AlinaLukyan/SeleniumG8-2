@@ -3,10 +3,12 @@ package tests;
 import com.app.pages.NewFormPage;
 import com.app.pages.TypeFormBuilderPage;
 import com.app.pages.TypeFormPage;
+import org.springframework.test.context.ContextConfiguration;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
+@ContextConfiguration(locations={"/test-context.xml"})
 public class ManageTypeFormTests extends BaseTest{
 
     /**

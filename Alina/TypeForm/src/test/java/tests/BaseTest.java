@@ -3,37 +3,49 @@ package tests;
 import com.app.pages.Header;
 import com.app.pages.LogInPage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
+@ContextConfiguration(locations={"/test-context.xml"})
+public class BaseTest extends AbstractTestNGSpringContextTests implements InitializingBean {
 
-public class BaseTest {
-
+    @Autowired
     WebDriver driver;
+
+    @Autowired
+    LogInPage logInPage;
+
+    @Value("${url}")
+    private String url;
+    @Value("${userName}")
+    private String userName;
+    @Value("${userPassword}")
+    private String password;
+
     public static final int DEFAULT_WAIT = 10;
 
-//    @AfterTest
-    @BeforeClass
-    public void setUp() {
-        driver = new FirefoxDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT, TimeUnit.SECONDS);
-        driver.get("https://admin.typeform.com");
-        logIn();
+    @Override
+    public void afterPropertiesSet() throws Exception {
     }
 
-    @Test
-    public void logIn() {
-        String username = "lukyanalina@gmail.com";
-        String password = "qwerty+1";
-
-        LogInPage logInPage = new LogInPage(driver);
-        logInPage.logIn(username, password);
+    //    @AfterTest
+    @BeforeClass
+    public void setUp() {
+//        driver = new FirefoxDriver();
+//        driver.get("https://admin.typeform.com");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT, TimeUnit.SECONDS);
+        driver.get(url);
+        logInPage.logIn(userName, password);
     }
 
     @Test(enabled = false)
@@ -51,6 +63,22 @@ public class BaseTest {
 
     @AfterClass
     public void tearDown() {
-//        driver.quit();
+        driver.quit();
+    }
+
+    public void setDriver(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
