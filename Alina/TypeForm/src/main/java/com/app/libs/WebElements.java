@@ -11,8 +11,11 @@ import java.util.concurrent.TimeUnit;
 import static com.app.libs.ConfigData.ui;
 
 /*
-* This class implements methods to work with default web-elements
+* This class implements methods to work with default web-elements.
+* It is not going to be used anywhere in the code.
+* Will be utilized some time soon. Some implementation moved to com/app/utils/Utils.java
  */
+@Deprecated
 public class WebElements {
 
     WebDriver driver;
@@ -142,7 +145,6 @@ public class WebElements {
         }
 
         driver.switchTo().window(parentWindow);
-
         driver.close();
     }
 }

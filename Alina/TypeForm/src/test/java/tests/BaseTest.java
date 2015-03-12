@@ -31,7 +31,7 @@ public class BaseTest extends AbstractTestNGSpringContextTests implements Initia
     @Value("${userPassword}")
     private String password;
 
-    public static final int DEFAULT_WAIT = 10;
+    public static final int DEFAULT_WAIT = 15;
 
     @Override
     public void afterPropertiesSet() throws Exception {

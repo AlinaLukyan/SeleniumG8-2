@@ -3,6 +3,7 @@ package tests;
 import com.app.pages.NewFormPage;
 import com.app.pages.TypeFormBuilderPage;
 import com.app.pages.TypeFormPage;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,17 +12,14 @@ import org.testng.annotations.Test;
 @ContextConfiguration(locations={"/test-context.xml"})
 public class ManageTypeFormTests extends BaseTest{
 
-//    @Autowired
-//    TypeFormPage typeFormPage;
+    @Value("${formName}")
+    String formName;
 
-//    @Value("${formName}")
-//    String formName;
-//
-//    @Value("${formType}")
-//    String formType;
-//
-//    @Value("${formLanguage}")
-//    String formLanguage;
+    @Value("${formType}")
+    String formType;
+
+    @Value("${formLanguage}")
+    String formLanguage;
 
     /**
      * Create a new typeForm.
@@ -31,12 +29,7 @@ public class ManageTypeFormTests extends BaseTest{
      */
     @Test
     public void createNewTypeForm(){
-        //to be generated automatically
-        String formName = "TypeForm1";
-        String formType = "Pro";
-        String formLanguage = "English";
-
-        TypeFormPage typeFormPage = new TypeFormPage(driver);//PageFactory.initElements(driver, TypeFormPage.class);
+        TypeFormPage typeFormPage = new TypeFormPage(driver);
 
         NewFormPage newFormPage = typeFormPage.addNewForm();
         TypeFormBuilderPage typeFormBuilderPage = newFormPage.withFormName(formName)
@@ -54,11 +47,6 @@ public class ManageTypeFormTests extends BaseTest{
      */
     @Test
     public void theNumberOfFormsShouldIncreaseByOne(){
-        //to be generated automatically
-        String formName = "TypeForm+1";
-        String formType = "Pro";
-        String formLanguage = "English";
-
         TypeFormPage typeFormPage = new TypeFormPage(driver);
         int currentFormNumber = typeFormPage.getTotalFormNumber();
 

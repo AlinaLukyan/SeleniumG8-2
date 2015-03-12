@@ -9,7 +9,11 @@ import java.io.IOException;
 import java.util.Properties;
 
 /*
- *  That class provides static methods for getting values from Config and UI mapping files
+ *  That class provides static methods for getting values from Config and UI mapping files.
+ *  This is a stub as of now because of some tests relying on the class.
+ *  It is going to utilized some time soon.
+ *  Spring framework will cover most of its functionality.
+ *  Some implementation moved to com/app/utils/Utils.java
  */
 public class ConfigData {
     private static final String CONFIG_FILE = "src/config.properties";				//DB connection details, default values for waits
