@@ -11,6 +11,18 @@ import org.testng.annotations.Test;
 @ContextConfiguration(locations={"/test-context.xml"})
 public class ManageTypeFormTests extends BaseTest{
 
+//    @Autowired
+//    TypeFormPage typeFormPage;
+
+//    @Value("${formName}")
+//    String formName;
+//
+//    @Value("${formType}")
+//    String formType;
+//
+//    @Value("${formLanguage}")
+//    String formLanguage;
+
     /**
      * Create a new typeForm.
      * Start from scratch in your creation. No templates used.

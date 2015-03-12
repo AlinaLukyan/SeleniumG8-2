@@ -1,4 +1,3 @@
 tests/NewQuestionTests.class
 tests/BaseTest.class
-tests/LogInTests.class
 tests/ManageTypeFormTests.class

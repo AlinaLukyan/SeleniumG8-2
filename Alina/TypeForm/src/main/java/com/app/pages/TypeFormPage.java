@@ -2,7 +2,6 @@ package com.app.pages;
 
 
 import com.app.libs.ConfigData;
-import com.app.libs.WebElements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,7 +15,6 @@ import java.util.concurrent.TimeUnit;
 public class TypeFormPage {
 
     WebDriver driver;
-    WebElements element;
     Actions action;
 
     WebElement newTypeFormButton;
@@ -28,19 +26,17 @@ public class TypeFormPage {
 
     public TypeFormPage(WebDriver driver){
         this.driver = driver;
-//        initElements();
         PageFactory.initElements(driver, this);
-        element = new WebElements(driver);
         action = new Actions(driver);
     }
 
-    private void initElements() {
+//    private void initElements() {
 //        newTypeFormButton = driver.findElement(ConfigData.ui("TypeFormPage.newTypeFormButton"));
-        activeForms = driver.findElements(ConfigData.ui("TypeFormPage.activeForms"));
-        formGrid = driver.findElement(ConfigData.ui("TypeFormPage.formGrid"));
-        deleteButton = driver.findElement(ConfigData.ui("TypeFormPage.deleteButton"));
-        emptyTypeForms = driver.findElements(ConfigData.ui("TypeFormPage.emptyTypeForms"));
-    }
+//        activeForms = driver.findElements(ConfigData.ui("TypeFormPage.activeForms"));
+//        formGrid = driver.findElement(ConfigData.ui("TypeFormPage.formGrid"));
+//        deleteButton = driver.findElement(ConfigData.ui("TypeFormPage.deleteButton"));
+//        emptyTypeForms = driver.findElements(ConfigData.ui("TypeFormPage.emptyTypeForms"));
+//    }
 
     public int getTotalFormNumber() {
         activeForms = driver.findElements(ConfigData.ui("TypeFormPage.activeForms"));
@@ -79,7 +75,7 @@ public class TypeFormPage {
 //                deleteButton.click();
             }
         }
-        return PageFactory.initElements(driver, ConfirmDeletePage.class);
+        return new ConfirmDeletePage(driver);
     }
 
     /**
@@ -87,13 +83,14 @@ public class TypeFormPage {
      * If nothing is found create a new one.
      * @return
      */
-    public TypeFormBuilderPage enterNewTypeForm() {
+    public TypeFormBuilderPage enterEmptyTypeForm() {
+        emptyTypeForms = driver.findElements(ConfigData.ui("TypeFormPage.emptyTypeForms"));
         if (emptyTypeForms.size() == 0) {
             addNewForm();
         } else {
             emptyTypeForms.get(0).click();
         }
         driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
-        return PageFactory.initElements(driver, TypeFormBuilderPage.class);
+        return new TypeFormBuilderPage(driver);
     }
 }

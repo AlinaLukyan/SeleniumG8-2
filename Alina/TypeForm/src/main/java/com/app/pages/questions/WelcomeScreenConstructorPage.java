@@ -1,11 +1,13 @@
 package com.app.pages.questions;
 
 
+import com.app.libs.ConfigData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WelcomeScreenConstructorPage {
@@ -30,10 +32,13 @@ public class WelcomeScreenConstructorPage {
     @FindBy(how = How.XPATH, using = ".//*[@id='typeform']/div[2]/div[1]/div/div[2]")
     WebElement previewWelcomeText;
 
+    WebElement welcomeScreenHeaderText;
+
 
     public WelcomeScreenConstructorPage(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, 800);
+        PageFactory.initElements(driver, this);
     }
 
     public void addNewWelcomeScreen(String welcomeText) {
@@ -68,5 +73,13 @@ public class WelcomeScreenConstructorPage {
     public String getPreviewWelcomeText() {
         driver.switchTo().frame(previewIFrame);
         return previewWelcomeText.getText();
+    }
+
+    public boolean isNewWelcomeScreenBuilderOpened() {
+        welcomeScreenHeaderText = driver.findElement(ConfigData.ui("WelcomeScreenConstructorPage.welcomeScreenHeaderText"));
+        if (welcomeScreenHeaderText != null)
+            return true;
+        else
+            return false;
     }
 }

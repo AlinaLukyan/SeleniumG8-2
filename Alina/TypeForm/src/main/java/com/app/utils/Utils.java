@@ -2,10 +2,18 @@ package com.app.utils;
 
 import org.openqa.selenium.By;
 
-/**
- * Created by Alinka on 12/03/15.
- */
+
 public class Utils {
+
+
+
+
+
+
+
+
+
+
     /*
      * The method picks a string by its key from the file and reads its locatorType and locatorValue
      * It returns a By locator for the WebElement from UI mapping file

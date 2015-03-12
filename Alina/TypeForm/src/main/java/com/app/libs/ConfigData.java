@@ -15,6 +15,8 @@ public class ConfigData {
     private static final String CONFIG_FILE = "src/config.properties";				//DB connection details, default values for waits
     private static final String UI_MAPPING_FILE = "src/UIMapping.properties";
 
+
+
     /*
      * Returns value from .properties file
      */

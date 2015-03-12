@@ -9,15 +9,6 @@ import org.springframework.beans.factory.InitializingBean;
 public class LogInPage implements InitializingBean {
 
     WebDriver driver;
-//    WebElements elements;
-
-
-
-//    ConfigData("LogInPage.usernameInput");
-
-//    @FindBy(how = How.valueOf(ConfigData.ui("LogInPage.usernameInput"));
-
-//    public static final String ui2 = "any";
 
     private WebElement usernameInput;
     private WebElement passwordInput;
@@ -30,12 +21,6 @@ public class LogInPage implements InitializingBean {
 
     public LogInPage(WebDriver driver) {
         this.driver = driver;
-//        elements = new WebElements(driver);
-    }
-
-    @Override
-    public void afterPropertiesSet() throws Exception {
-
     }
 
     public void logIn(String username, String password){
@@ -59,5 +44,10 @@ public class LogInPage implements InitializingBean {
 
     public void setLoginButtonLocator(String loginButtonLocator) {
         this.loginButtonLocator = loginButtonLocator;
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+
     }
 }

@@ -58,6 +58,7 @@ public class BaseTest extends AbstractTestNGSpringContextTests implements Initia
         Header siteHeader = PageFactory.initElements(driver, Header.class);
 
         LogInPage logInPage = siteHeader.logOut();
+
         //TODO: Assert
     }
 

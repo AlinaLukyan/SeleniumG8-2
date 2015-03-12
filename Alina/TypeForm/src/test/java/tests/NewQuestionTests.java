@@ -19,7 +19,7 @@ public class NewQuestionTests extends BaseTest {
         String welcomeText = "Welcome text goes here. This is just a test";
 
         TypeFormPage typeFormPage = PageFactory.initElements(driver, TypeFormPage.class);
-        TypeFormBuilderPage typeFormBuilderPage = typeFormPage.enterNewTypeForm();
+        TypeFormBuilderPage typeFormBuilderPage = typeFormPage.enterEmptyTypeForm();
         WelcomeScreenConstructorPage welcomeScreenConstructorPage = typeFormBuilderPage.enterWelcomeScreenConstructor();
         welcomeScreenConstructorPage.addNewWelcomeScreen(welcomeText);
 

@@ -28,4 +28,12 @@
         <property name="loginButtonLocator" value="${LogInPage.loginButton}"/>
     </bean>
 
+
+
+    <bean id="typeFormPage" class="com.app.pages.TypeFormPage">
+        <constructor-arg ref="driver"/>
+
+
+    </bean>
+
 </beans>

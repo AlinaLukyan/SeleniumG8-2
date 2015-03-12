@@ -11,7 +11,6 @@ import java.util.List;
 public class NewFormPage {
 
     WebDriver driver;
-//    WebElements elements;
 
     WebElement formNameInput;
     WebElement formLanguageSelectButton;
@@ -20,17 +19,15 @@ public class NewFormPage {
 
     public NewFormPage(WebDriver driver){
         this.driver = driver;
-//        initElements();
         PageFactory.initElements(driver, this);
-//        elements = new WebElements(driver);
     }
 
-    private void initElements() {
-        formNameInput = driver.findElement(ConfigData.ui("NewFormPage.formNameInput"));
-        formLanguageSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formLanguageSelectButton"));
-        formTypeSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formTypeSelectButton"));
-        buildButton = driver.findElement(ConfigData.ui("NewFormPage.buildButton"));
-    }
+//    private void initElements() {
+//        formNameInput = driver.findElement(ConfigData.ui("NewFormPage.formNameInput"));
+//        formLanguageSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formLanguageSelectButton"));
+//        formTypeSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formTypeSelectButton"));
+//        buildButton = driver.findElement(ConfigData.ui("NewFormPage.buildButton"));
+//    }
 
     public NewFormPage withFormName(String formName){
         formNameInput = driver.findElement(ConfigData.ui("NewFormPage.formNameInput"));

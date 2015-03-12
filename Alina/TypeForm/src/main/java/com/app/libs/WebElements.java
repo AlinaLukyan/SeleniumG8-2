@@ -131,4 +131,18 @@ public class WebElements {
             }
         }
     }
+
+    public void goToNextWindow() {
+
+        String parentWindow = driver.getWindowHandle();
+        for(String window : driver.getWindowHandles()) {  //returns a set
+            driver.switchTo().window(window);
+//            if (!element.isPresent)
+//                return;
+        }
+
+        driver.switchTo().window(parentWindow);
+
+        driver.close();
+    }
 }

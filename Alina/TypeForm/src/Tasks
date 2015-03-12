@@ -39,6 +39,15 @@ Assert.fail("Message")
 }
 Use it in ConfigData, WebElements
 
+- Actions, Select, WebDriverWait
+- Runtime.getRuntime().exec("kill -9" + )
+- Alert alert = driver.switchTo().alert();
+alert.accept();
+driver.switchTo().defaultContent();
+- Thread.sleep
+- wait.until(ExpectedConditions.not(ExpectedConditions.))
+
+
 
 
 
