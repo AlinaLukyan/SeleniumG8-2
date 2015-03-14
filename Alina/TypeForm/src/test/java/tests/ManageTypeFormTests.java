@@ -1,23 +1,35 @@
 package tests;
 
+import com.app.pages.Header;
 import com.app.pages.NewFormPage;
 import com.app.pages.TypeFormBuilderPage;
 import com.app.pages.TypeFormPage;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-@ContextConfiguration(locations={"/test-context.xml"})
-public class ManageTypeFormTests extends BaseTest{
+@ContextConfiguration(locations={
+        "/page-context.xml",
+        "/test-context.xml",
+})
+public class ManageTypeFormTests extends BaseTest {
+
+    @Autowired
+    TypeFormPage typeFormPage;
+    @Autowired
+    TypeFormBuilderPage typeFormBuilderPage;
+    @Autowired
+    NewFormPage newFormPage;
+    @Autowired
+    Header header;
 
     @Value("${formName}")
     String formName;
-
     @Value("${formType}")
     String formType;
-
     @Value("${formLanguage}")
     String formLanguage;
 
@@ -29,10 +41,8 @@ public class ManageTypeFormTests extends BaseTest{
      */
     @Test
     public void createNewTypeForm(){
-        TypeFormPage typeFormPage = new TypeFormPage(driver);
-
-        NewFormPage newFormPage = typeFormPage.addNewForm();
-        TypeFormBuilderPage typeFormBuilderPage = newFormPage.withFormName(formName)
+        newFormPage = typeFormPage.addNewForm();
+        typeFormBuilderPage = newFormPage.withFormName(formName)
                 .withFormLanguage(formLanguage)
                 .withFormType(formType)
                 .openFormBuilderPage();
@@ -47,15 +57,14 @@ public class ManageTypeFormTests extends BaseTest{
      */
     @Test
     public void theNumberOfFormsShouldIncreaseByOne(){
-        TypeFormPage typeFormPage = new TypeFormPage(driver);
         int currentFormNumber = typeFormPage.getTotalFormNumber();
 
-        NewFormPage newFormPage = typeFormPage.addNewForm();
-        TypeFormPage typeFormPage1 = newFormPage.withFormName(formName)
+        newFormPage = typeFormPage.addNewForm();
+        newFormPage.withFormName(formName)
                 .withFormLanguage(formLanguage)
                 .withFormType(formType)
-                .openFormBuilderPage()
-                .goToHomePage();
+                .openFormBuilderPage();
+        header.goToHomePage();
 
         Assert.assertEquals(typeFormPage.getTotalFormNumber(), currentFormNumber+1);
     }

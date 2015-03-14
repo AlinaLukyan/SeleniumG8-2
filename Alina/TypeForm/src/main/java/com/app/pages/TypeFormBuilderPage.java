@@ -1,33 +1,37 @@
 package com.app.pages;
 
-import com.app.libs.ConfigData;
 import com.app.pages.questions.WelcomeScreenConstructorPage;
+import com.app.utils.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.PageFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 
 
-public class TypeFormBuilderPage extends Header {
+public class TypeFormBuilderPage {
 
-    WebElement formEntered;
-    WebElement welcomeScreenButton;
-    WebElement dragAndDropHereSpot;
-    Actions actions;
+    private WebDriver driver;
+    private WebElement formEntered;
+    private WebElement welcomeScreenButton;
+    private WebElement dragAndDropSpot;
+
+    @Autowired
+    private Actions actions;
+
+    @Value("${TypeFormBuilderPage.formEntered}")
+    private String formEnteredLocator;
+    @Value("${TypeFormBuilderPage.welcomeScreenButton}")
+    private String welcomeScreenButtonLocator;
+    @Value("${TypeFormBuilderPage.dragAndDropSpot}")
+    private String dragAndDropSpotLocator;
 
     public TypeFormBuilderPage(WebDriver driver) {
-        super(driver);
-        actions = new Actions(driver);
-        PageFactory.initElements(driver, this);
+        this.driver = driver;
     }
 
-//    private void initElements() {
-//        formEntered = driver.findElement(ConfigData.ui("TypeFormBuilderPage.formEntered"));
-//        welcomeScreenButton = driver.findElement(ConfigData.ui("TypeFormBuilderPage.welcomeScreenButton"));
-//    }
-
     public WebElement getFormEntered() {
-        formEntered = driver.findElement(ConfigData.ui("TypeFormBuilderPage.formEntered"));
+        formEntered = driver.findElement(Utils.getLocatorByType(formEnteredLocator));
         return formEntered;
     }
 
@@ -36,15 +40,28 @@ public class TypeFormBuilderPage extends Header {
     }
 
     public WelcomeScreenConstructorPage enterWelcomeScreenConstructor() {
-        welcomeScreenButton = driver.findElement(ConfigData.ui("TypeFormBuilderPage.welcomeScreenButton"));
+        welcomeScreenButton = driver.findElement(Utils.getLocatorByType(welcomeScreenButtonLocator));
         welcomeScreenButton.click();
         return new WelcomeScreenConstructorPage(driver);
     }
 
     public WelcomeScreenConstructorPage dragAndDropWelcomeScreen() {
-        welcomeScreenButton = driver.findElement(ConfigData.ui("TypeFormBuilderPage.welcomeScreenButton"));
-        dragAndDropHereSpot = driver.findElement(ConfigData.ui("TypeFormBuilderPage.dragAndDropHereSpot"));
-        actions.dragAndDrop(welcomeScreenButton, dragAndDropHereSpot).build().perform();
+        welcomeScreenButton = driver.findElement(Utils.getLocatorByType(welcomeScreenButtonLocator));
+        dragAndDropSpot = driver.findElement(Utils.getLocatorByType(dragAndDropSpotLocator));
+        actions.dragAndDrop(welcomeScreenButton, dragAndDropSpot).build().perform();
         return new WelcomeScreenConstructorPage(driver);
     }
+
+    public void setFormEnteredLocator(String formEnteredLocator) {
+        this.formEnteredLocator = formEnteredLocator;
+    }
+
+    public void setWelcomeScreenButtonLocator(String welcomeScreenButtonLocator) {
+        this.welcomeScreenButtonLocator = welcomeScreenButtonLocator;
+    }
+
+    public void setDragAndDropSpotLocator(String dragAndDropSpotLocator) {
+        this.dragAndDropSpotLocator = dragAndDropSpotLocator;
+    }
+
 }

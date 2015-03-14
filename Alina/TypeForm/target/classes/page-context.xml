@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:ui-map.properties</value>
+            </list>
+        </property>
+        <!--<property name="ignoreUnresolvablePlaceholders" value="true"/>-->
+    </bean>
+
+    <bean id="actions" class="org.openqa.selenium.interactions.Actions">
+        <constructor-arg ref="driver"/>
+    </bean>
+
+    <bean id="loginPage" class="com.app.pages.LogInPage">
+        <constructor-arg ref="driver"/>
+        <!--<property name="userInputLocator" value="${LogInPage.usernameInput}"/>-->
+        <!--<property name="passwordInputLocator" value="${LogInPage.passwordInput}"/>-->
+        <!--<property name="loginButtonLocator" value="${LogInPage.loginButton}"/>-->
+    </bean>
+
+    <bean id="newFormPage" class="com.app.pages.NewFormPage">
+        <constructor-arg ref="driver"/>
+        <!--<property name="formNameInputLocator" value="${NewFormPage.formNameInput}"/>-->
+        <!--<property name="formLanguageSelectButtonLocator" value="${NewFormPage.formLanguageSelectButton}"/>-->
+        <!--<property name="formTypeSelectButtonLocator" value="${NewFormPage.formTypeSelectButton}"/>-->
+        <!--<property name="buildButtonLocator" value="${NewFormPage.buildButton}"/>-->
+    </bean>
+
+    <bean id="typeFormPage" class="com.app.pages.TypeFormPage">
+        <constructor-arg ref="driver"/>
+        <!--<property name="newTypeFormButtonLocator" value="TypeFormPage.newTypeFormButton"/>-->
+        <!--<property name="activeFormsLocator" value="TypeFormPage.activeForms"/>-->
+        <!--<property name="formGridLocator" value="TypeFormPage.formGrid"/>-->
+        <!--<property name="deleteButtonLocator" value="TypeFormPage.deleteButton"/>-->
+        <!--<property name="emptyTypeFormsLocator" value="TypeFormPage.emptyTypeForms"/>-->
+    </bean>
+
+    <bean id="typeFormBuilderPage" class="com.app.pages.TypeFormBuilderPage">
+        <constructor-arg ref="driver"/>
+        <!--<property name="formEnteredLocator" value="TypeFormBuilderPage.formEntered"/>-->
+        <!--<property name="welcomeScreenButtonLocator" value="TypeFormBuilderPage.welcomeScreenButton"/>-->
+        <!--<property name="dragAndDropSpotLocator" value="TypeFormBuilderPage.dragAndDropSpot"/>-->
+    </bean>
+
+    <bean id="header" class="com.app.pages.Header">
+        <constructor-arg ref="driver"/>
+    </bean>
+
+</beans>
+

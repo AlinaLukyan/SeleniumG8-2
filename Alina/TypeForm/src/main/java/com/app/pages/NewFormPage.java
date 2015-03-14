@@ -1,43 +1,48 @@
 package com.app.pages;
 
-import com.app.libs.ConfigData;
+import com.app.utils.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.util.List;
 
 public class NewFormPage {
 
-    WebDriver driver;
+    private WebDriver driver;
 
-    WebElement formNameInput;
-    WebElement formLanguageSelectButton;
-    WebElement formTypeSelectButton;
-    WebElement buildButton;
+    private WebElement formNameInput;
+    private WebElement formLanguageSelectButton;
+    private WebElement formTypeSelectButton;
+    private WebElement buildButton;
 
-    public NewFormPage(WebDriver driver){
+    @Autowired
+    private TypeFormBuilderPage typeFormBuilderPage;
+
+    @Value("${NewFormPage.formNameInput}")
+    private String formNameInputLocator;
+    @Value("${NewFormPage.formLanguageSelectButton}")
+    private String formLanguageSelectButtonLocator;
+    @Value("${NewFormPage.formTypeSelectButton}")
+    private String formTypeSelectButtonLocator;
+    @Value("${NewFormPage.buildButton}")
+    private String buildButtonLocator;
+
+    public NewFormPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver, this);
     }
 
-//    private void initElements() {
-//        formNameInput = driver.findElement(ConfigData.ui("NewFormPage.formNameInput"));
-//        formLanguageSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formLanguageSelectButton"));
-//        formTypeSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formTypeSelectButton"));
-//        buildButton = driver.findElement(ConfigData.ui("NewFormPage.buildButton"));
-//    }
-
-    public NewFormPage withFormName(String formName){
-        formNameInput = driver.findElement(ConfigData.ui("NewFormPage.formNameInput"));
+    public NewFormPage withFormName(String formName) {
+        formNameInput = driver.findElement(Utils.getLocatorByType(formNameInputLocator));
         formNameInput.clear();
         formNameInput.sendKeys(formName);
         return this;
     }
 
     public NewFormPage withFormLanguage(String formLanguage){
-        formLanguageSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formLanguageSelectButton"));
+        formLanguageSelectButton = driver.findElement(Utils.getLocatorByType(formLanguageSelectButtonLocator));
         formLanguageSelectButton.click();
         List<WebElement> options = formLanguageSelectButton.findElements(By.xpath("//div[@class='select2-result-label']"));
         for (WebElement element : options){
@@ -49,8 +54,8 @@ public class NewFormPage {
         return this;
     }
 
-    public NewFormPage withFormType(String formType){
-        formTypeSelectButton = driver.findElement(ConfigData.ui("NewFormPage.formTypeSelectButton"));
+    public NewFormPage withFormType(String formType) {
+        formTypeSelectButton = driver.findElement(Utils.getLocatorByType(formTypeSelectButtonLocator));
         formTypeSelectButton.click();
         List<WebElement> options = formTypeSelectButton.findElements(By.xpath("//div[@class='select2-result-label']"));
         for (WebElement element : options) {
@@ -62,9 +67,26 @@ public class NewFormPage {
         return this;
     }
 
-    public TypeFormBuilderPage openFormBuilderPage(){
-        buildButton = driver.findElement(ConfigData.ui("NewFormPage.buildButton"));
+    public TypeFormBuilderPage openFormBuilderPage() {
+        buildButton = driver.findElement(Utils.getLocatorByType(buildButtonLocator));
         buildButton.click();
-        return PageFactory.initElements(driver, TypeFormBuilderPage.class);
+        return typeFormBuilderPage;
     }
+
+    public void setFormNameInputLocator(String formNameInputLocator) {
+        this.formNameInputLocator = formNameInputLocator;
+    }
+
+    public void setFormLanguageSelectButtonLocator(String formLanguageSelectButtonLocator) {
+        this.formLanguageSelectButtonLocator = formLanguageSelectButtonLocator;
+    }
+
+    public void setFormTypeSelectButtonLocator(String formTypeSelectButtonLocator) {
+        this.formTypeSelectButtonLocator = formTypeSelectButtonLocator;
+    }
+
+    public void setBuildButtonLocator(String buildButtonLocator) {
+        this.buildButtonLocator = buildButtonLocator;
+    }
+
 }

@@ -4,14 +4,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static com.app.libs.ConfigData.ui;
-
-
 public class Utils {
+
+    private static final Logger LOG = LoggerFactory.getLogger(Utils.class);
 
     WebDriver driver;
     public static final int DEFAULT_WAIT = 30;
@@ -29,7 +30,7 @@ public class Utils {
     }
 
     public void selectCheckBox(String checkBoxSetLocator, boolean checkBoxState) {
-        WebElement checkBox = driver.findElement(ui(checkBoxSetLocator));
+        WebElement checkBox = driver.findElement(getLocatorByType(checkBoxSetLocator));
         boolean currentState = checkBox.isSelected();
 
         if((!currentState && checkBoxState) || (currentState && !checkBoxState)){
@@ -46,7 +47,7 @@ public class Utils {
      */
     public boolean isElementPresent(String elementLocator) {
         driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-        boolean result = driver.findElements(ui(elementLocator)).size() > 0;
+        boolean result = driver.findElements(getLocatorByType(elementLocator)).size() > 0;
         driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT, TimeUnit.SECONDS);
         return result;
 //        try {
@@ -64,10 +65,10 @@ public class Utils {
      * The method implements selecting elements from a drop-down list
      */
     public void selectFromDropDown(String selectButtonLocator, String elementListLocator, String elementText) {
-        WebElement selectButton = driver.findElement(ui(selectButtonLocator));
+        WebElement selectButton = driver.findElement(getLocatorByType(selectButtonLocator));
         selectButton.click();
 
-        List<WebElement> options = selectButton.findElements(ui(elementListLocator));
+        List<WebElement> options = selectButton.findElements(getLocatorByType(elementListLocator));
         for (WebElement element : options) {
             if (element.getText().equals(elementText)) {
                 element.click();
@@ -83,7 +84,7 @@ public class Utils {
         if (option <= 0) {
             throw new IndexOutOfBoundsException(option + " is less or equal ZERO");
         } else {
-            List<WebElement> radioElements = driver.findElements(ui(radioElementsLocator));
+            List<WebElement> radioElements = driver.findElements(getLocatorByType(radioElementsLocator));
 
             if (option > 0 && option <= radioElements.size()) {
                 radioElements.get(option - 1).click();
@@ -113,6 +114,7 @@ public class Utils {
      * It returns a By locator for the WebElement from UI mapping file
      */
     public static By getLocatorByType(String locator) {
+        LOG.info("locator: {}", locator);
         String[] splitValue = locator.split("\"");
         String locatorType = splitValue[0].substring(0, splitValue[0].length() - 1);
         String locatorValue = splitValue[1];

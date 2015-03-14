@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 
 public class NewQuestionTests extends BaseTest {
 
-
     @Test(enabled = false)
     public void addWelcomeScreen() {
         String welcomeText = "Welcome text goes here. This is just a test";

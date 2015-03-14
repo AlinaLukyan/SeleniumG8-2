@@ -4,7 +4,6 @@ com/app/pages/questions/PictureChoiceQuestionPage.class
 com/app/pages/questions/QuestionGroupQuestionPage.class
 com/app/pages/questions/StatementQuestionPage.class
 com/app/pages/questions/LongTextPage.class
-com/app/libs/ConfigData.class
 com/app/pages/questions/WelcomeScreenConstructorPage.class
 com/app/pages/questions/YesNowQuestionPage.class
 com/app/pages/questions/PaymentQuestionPage.class
@@ -13,7 +12,6 @@ com/app/pages/questions/MultipleChoiceQuestionPage.class
 com/app/pages/Header.class
 com/app/pages/NewFormPage.class
 com/app/libs/WebElements.class
-com/app/utils/InputDataGenerator.class
 com/app/pages/LogInPage.class
 com/app/pages/questions/NumberQuestionPage.class
 com/app/pages/questions/RatingQuestionPage.class

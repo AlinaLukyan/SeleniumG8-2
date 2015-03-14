@@ -1,32 +1,43 @@
 package com.app.pages;
 
-import com.app.libs.ConfigData;
+import com.app.utils.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
+import org.springframework.beans.factory.annotation.Value;
 
 
 public class ConfirmDeletePage {
 
-    WebDriver driver;
+    private WebDriver driver;
 
     private WebElement yesButton;
     private WebElement noButton;
 
+    @Value("${ConfirmDeletePage.yesButton}")
+    private String yesButtonLocator;
+
+    @Value("${ConfirmDeletePage.noButton}")
+    private String noButtonLocator;
 
     public ConfirmDeletePage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver, this);
     }
 
     public void confirmDelete() {
-        yesButton = driver.findElement(ConfigData.ui("ConfirmDeletePage.yesButton"));
+        yesButton = driver.findElement(Utils.getLocatorByType(yesButtonLocator));
         yesButton.click();
     }
 
     public void cancelDelete() {
-        noButton = driver.findElement(ConfigData.ui("ConfirmDeletePage.noButton"));
+        noButton = driver.findElement(Utils.getLocatorByType(noButtonLocator));
         noButton.click();
     }
 
+    public void setYesButton(WebElement yesButton) {
+        this.yesButton = yesButton;
+    }
+
+    public void setNoButton(WebElement noButton) {
+        this.noButton = noButton;
+    }
 }

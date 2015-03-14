@@ -3,26 +3,29 @@ package tests;
 import com.app.pages.Header;
 import com.app.pages.LogInPage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-@ContextConfiguration(locations={"/test-context.xml"})
-public class BaseTest extends AbstractTestNGSpringContextTests implements InitializingBean {
+@ContextConfiguration(locations={
+        "/page-context.xml",
+        "/test-context.xml",
+})
+public class BaseTest extends AbstractTestNGSpringContextTests {
 
     @Autowired
-    WebDriver driver;
+    protected WebDriver driver;
 
     @Autowired
-    LogInPage logInPage;
+    private LogInPage logInPage;
+
+    @Autowired
+    private Header header;
 
     @Value("${url}")
     private String url;
@@ -31,35 +34,14 @@ public class BaseTest extends AbstractTestNGSpringContextTests implements Initia
     @Value("${userPassword}")
     private String password;
 
-    public static final int DEFAULT_WAIT = 15;
+    public static final int DEFAULT_WAIT = 30;
 
-    @Override
-    public void afterPropertiesSet() throws Exception {
-    }
-
-    //    @AfterTest
     @BeforeClass
-    public void setUp() {
-//        driver = new FirefoxDriver();
-//        driver.get("https://admin.typeform.com");
+    public void setUp() throws Exception {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT, TimeUnit.SECONDS);
         driver.get(url);
         logInPage.logIn(userName, password);
-    }
-
-    @Test(enabled = false)
-    public void signUp() {
-
-    }
-
-    @Test(enabled = false)
-    public void logOut() {
-        Header siteHeader = PageFactory.initElements(driver, Header.class);
-
-        LogInPage logInPage = siteHeader.logOut();
-
-        //TODO: Assert
     }
 
     @AfterClass
@@ -81,5 +63,9 @@ public class BaseTest extends AbstractTestNGSpringContextTests implements Initia
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public void setHeader(Header header) {
+        this.header = header;
     }
 }

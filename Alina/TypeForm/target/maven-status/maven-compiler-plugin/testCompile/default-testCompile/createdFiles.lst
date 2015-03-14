@@ -1,3 +1,4 @@
+tests/ManageTypeFormTests.class
+tests/QuestionDragAndDropTests.class
 tests/NewQuestionTests.class
 tests/BaseTest.class
-tests/ManageTypeFormTests.class

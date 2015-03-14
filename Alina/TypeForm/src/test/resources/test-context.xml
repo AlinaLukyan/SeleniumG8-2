@@ -5,35 +5,23 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="classpath*:UIMapping.properties"/>
+    <bean id="driver" class="org.openqa.selenium.firefox.FirefoxDriver" />
 
-    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location">
-            <value>classpath:UIMapping.properties</value>
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:ui-map.properties</value>
+                <value>classpath:test.properties</value>
+            </list>
         </property>
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
     </bean>
 
-    <bean id="driver" class="org.openqa.selenium.firefox.FirefoxDriver"></bean>
+    <!--<bean id="actions" class="org.openqa.selenium.interactions.Actions"></bean>-->
 
-    <!--<bean id="baseTest" class="tests.BaseTest" />-->
-        <!--<property name="url" value="${url}"/>-->
-        <!--<property name="userName" value="${userName}"/>-->
-        <!--<property name="password" value="{userPassword}"/>-->
-    <!--</bean>-->
-
-    <bean id="loginPage" class="com.app.pages.LogInPage">
-        <constructor-arg ref="driver"/>
-        <property name="userInputLocator" value="${LogInPage.usernameInput}"/>
-        <property name="passwordInputLocator" value="${LogInPage.passwordInput}"/>
-        <property name="loginButtonLocator" value="${LogInPage.loginButton}"/>
-    </bean>
-
-
-
-    <bean id="typeFormPage" class="com.app.pages.TypeFormPage">
-        <constructor-arg ref="driver"/>
-
-
+    <bean id="baseTest" class="tests.BaseTest">
+        <property name="driver" ref="driver"/>
     </bean>
 
 </beans>
+

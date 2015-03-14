@@ -1,7 +1,7 @@
 package com.app.pages.questions;
 
 
-import com.app.libs.ConfigData;
+import com.app.utils.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.springframework.beans.factory.annotation.Value;
 
 public class WelcomeScreenConstructorPage {
 
@@ -34,6 +35,8 @@ public class WelcomeScreenConstructorPage {
 
     WebElement welcomeScreenHeaderText;
 
+    @Value("${WelcomeScreenConstructorPage.welcomeScreenHeaderText}")
+    private String welcomeScreenHeader;
 
     public WelcomeScreenConstructorPage(WebDriver driver) {
         this.driver = driver;
@@ -76,7 +79,7 @@ public class WelcomeScreenConstructorPage {
     }
 
     public boolean isNewWelcomeScreenBuilderOpened() {
-        welcomeScreenHeaderText = driver.findElement(ConfigData.ui("WelcomeScreenConstructorPage.welcomeScreenHeaderText"));
+        welcomeScreenHeaderText = driver.findElement(Utils.getLocatorByType(welcomeScreenHeader));
         if (welcomeScreenHeaderText != null)
             return true;
         else

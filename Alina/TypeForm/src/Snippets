@@ -1,21 +1,36 @@
 
-
 driver.getTitle();
-
     
 driver.getCurrentUrl().equals("https://www.google.com/doodles");
 
-
 WebDriverWait wait = new WebDriverWait(driver, 200);
 wait.until(ExpectedConditions.visibilityOf(formEntered));
-
+wait.until(ExpectedConditions.not(ExpectedConditions.))
 
 Select select = new Select(driver.findElement(By.xpath("//path_to_drop_down")));
 select.deselectAll();
 select.selectByVisibleText("Value1");
 
-
 driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
 
-
 System.currentTimeMillis();
+
+Runtime.getRuntime().exec("kill -9" + )
+
+Alert alert = driver.switchTo().alert();
+alert.accept();
+driver.switchTo().defaultContent();
+
+Thread.sleep
+
+>>>> Varargs
+public CampaignCreatePage withCampaignTargetsIds(long... targets) {
+    targetsIds.sendKeys(StringUtils.join(target,","));
+    return this;
+    }
+@Test
+public void shouldntSaveTargetUnknownIds() throws Exception {
+    CampaignCreatePage createPage = openCampaignCreatePage();
+    createPage.withCampaignName("SELENIUM").withAgent("firefox").withAssignee("tom").withProduct(0).withCampaignTargetsIds(1, 2, 3, 4);
+    createPage.save().hasNumberOfErrors(1);
+}

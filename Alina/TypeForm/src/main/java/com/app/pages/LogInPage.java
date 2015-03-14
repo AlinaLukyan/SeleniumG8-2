@@ -3,27 +3,32 @@ package com.app.pages;
 import com.app.utils.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.springframework.beans.factory.InitializingBean;
+import org.openqa.selenium.support.PageFactory;
+import org.springframework.beans.factory.annotation.Value;
 
 
-public class LogInPage implements InitializingBean {
+public class LogInPage {
 
-    WebDriver driver;
+    private WebDriver driver;
+
+    @Value("${LogInPage.usernameInput}")
+    private String userInputLocator;
+    @Value("${LogInPage.passwordInput}")
+    private String passwordInputLocator;
+    @Value("${LogInPage.loginButton}")
+    private String loginButtonLocator;
 
     private WebElement usernameInput;
     private WebElement passwordInput;
     private WebElement loginButton;
 
-    private String userInputLocator;
-    private String passwordInputLocator;
-    private String loginButtonLocator;
-
-
     public LogInPage(WebDriver driver) {
         this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
-    public void logIn(String username, String password){
+    public NewFormPage logIn(String username, String password){
+
         usernameInput = driver.findElement(Utils.getLocatorByType(userInputLocator));
         usernameInput.clear();
         usernameInput.sendKeys(username);
@@ -32,6 +37,7 @@ public class LogInPage implements InitializingBean {
         passwordInput.sendKeys(password);
         loginButton = driver.findElement(Utils.getLocatorByType(loginButtonLocator));
         loginButton.click();
+        return new NewFormPage(driver);
     }
 
     public void setUserInputLocator(String userInputLocator) {
@@ -44,10 +50,5 @@ public class LogInPage implements InitializingBean {
 
     public void setLoginButtonLocator(String loginButtonLocator) {
         this.loginButtonLocator = loginButtonLocator;
-    }
-
-    @Override
-    public void afterPropertiesSet() throws Exception {
-
     }
 }

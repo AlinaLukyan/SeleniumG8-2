@@ -1,14 +1,13 @@
 package com.app.libs;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
-import static com.app.libs.ConfigData.ui;
 
 /*
 * This class implements methods to work with default web-elements.
@@ -146,5 +145,10 @@ public class WebElements {
 
         driver.switchTo().window(parentWindow);
         driver.close();
+    }
+
+    @Deprecated
+    public static By ui(String locator) {
+        return null;
     }
 }

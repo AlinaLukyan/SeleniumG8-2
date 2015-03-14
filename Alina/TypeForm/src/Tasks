@@ -1,53 +1,11 @@
 
 ToDo:
-- WebDriverFactory, implement in own project
-- Asserts for every test
+- WebDriverFactory (Singleton)
 - try-catch if needed
-
-
-4. Принести свой WebElements class (если надо дописать метод по дропдауну, найдите сайт где он есть, напишите и проверьте)
-Замечания - тесты должны соблюдать строгую логику - если после метода Вы переходите на след страницу метод должен возвращать объект это странице
-
-Согласно твоему GitHub
-2. Почистить от exceptions WebElements
-4. driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-Сделай константу для стандартного ожидания
-5. public WelcomeScreenConstructorPage enterWelcomeScreenConstructor() {
-        welcomeScreenButton.click();
-        driver.manage().timeouts().implicitlyWait(500, TimeUnit.SECONDS);
-//        driver.manage().timeouts().pageLoadTimeout(1000, TimeUnit.SECONDS);
-        return PageFactory.initElements(driver, WelcomeScreenConstructorPage.class);
-    }
-почему такой return?
-6. BaseTest - не работает. Смешаная логика аннтотация смешаная.
-7. LogInTests - падает
-8. Тоже падает - ManageTypeFormTests
-9. Можешь обьяснить почему так реализован класс BaseTest
-
-
-Notes:
-- catch(Exception e) - catches any type of exception
-- application.properties (default wait) - default framework value is 0
-- Singleton pattern to run one driver for multiple tests
--
-WebElements elements;
-private static By button = By.xpath("");
-elements.clickButton("//input//");
-- try {
-} catch() {
-Assert.fail("Message")
-}
-Use it in ConfigData, WebElements
-
-- Actions, Select, WebDriverWait
-- Runtime.getRuntime().exec("kill -9" + )
-- Alert alert = driver.switchTo().alert();
-alert.accept();
-driver.switchTo().defaultContent();
-- Thread.sleep
-- wait.until(ExpectedConditions.not(ExpectedConditions.))
-
-
-
-
-
+- WebElements & ConfigData classes
+- Fix annotations
+- Fix all the tests
+- Asserts for every test
+- Spring config (Default wait constants)
+- Actions, Select, Alert, WebDriverWait
+- Varargs
