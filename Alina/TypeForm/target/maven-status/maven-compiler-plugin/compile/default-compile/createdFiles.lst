@@ -11,9 +11,9 @@ com/app/pages/questions/ShortTextPage.class
 com/app/pages/questions/MultipleChoiceQuestionPage.class
 com/app/pages/Header.class
 com/app/pages/NewFormPage.class
-com/app/libs/WebElements.class
 com/app/pages/LogInPage.class
 com/app/pages/questions/NumberQuestionPage.class
+com/app/utils/WebElements.class
 com/app/pages/questions/RatingQuestionPage.class
 com/app/pages/questions/FileUploadQuestionPage.class
 com/app/pages/TypeFormPage.class

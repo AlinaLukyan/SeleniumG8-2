@@ -3,7 +3,6 @@ package com.app.pages;
 import com.app.utils.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -27,7 +26,7 @@ public class Header {
 
     public Header(WebDriver driver){
         this.driver = driver;
-        PageFactory.initElements(driver, this);
+//        PageFactory.initElements(driver, this);
     }
 
     public TypeFormPage goToHomePage(){

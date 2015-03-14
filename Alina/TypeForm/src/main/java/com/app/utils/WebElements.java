@@ -1,4 +1,4 @@
-package com.app.libs;
+package com.app.utils;
 
 
 import org.openqa.selenium.By;

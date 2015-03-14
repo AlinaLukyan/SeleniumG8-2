@@ -17,6 +17,11 @@
         <constructor-arg ref="driver"/>
     </bean>
 
+    <bean id="webDriverWait" class="org.openqa.selenium.support.ui.WebDriverWait">
+        <constructor-arg ref="driver" index="0"/>
+        <constructor-arg value="${MaxWebDriverWait}" index="1"/>
+    </bean>
+
     <bean id="loginPage" class="com.app.pages.LogInPage">
         <constructor-arg ref="driver"/>
         <!--<property name="userInputLocator" value="${LogInPage.usernameInput}"/>-->
@@ -48,7 +53,15 @@
         <!--<property name="dragAndDropSpotLocator" value="TypeFormBuilderPage.dragAndDropSpot"/>-->
     </bean>
 
+    <bean id="welcomeScreenConstructorPage" class="com.app.pages.questions.WelcomeScreenConstructorPage">
+        <constructor-arg ref="driver"/>
+    </bean>
+
     <bean id="header" class="com.app.pages.Header">
+        <constructor-arg ref="driver"/>
+    </bean>
+
+    <bean id="confirmDeletePage" class="com.app.pages.ConfirmDeletePage">
         <constructor-arg ref="driver"/>
     </bean>
 

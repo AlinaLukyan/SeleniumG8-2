@@ -5,8 +5,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="driver" class="org.openqa.selenium.firefox.FirefoxDriver" />
-
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
@@ -17,7 +15,10 @@
         <property name="ignoreUnresolvablePlaceholders" value="true"/>
     </bean>
 
-    <!--<bean id="actions" class="org.openqa.selenium.interactions.Actions"></bean>-->
+    <bean id="driver" class="org.openqa.selenium.firefox.FirefoxDriver" />
+
+    <bean id="desiredCapabilities" class="org.openqa.selenium.remote.DesiredCapabilities"/>
+    <!--<bean id="webDriverFactoryMode" class="ru.stqa.selenium.factory.WebDriverFactoryMode"/>-->
 
     <bean id="baseTest" class="tests.BaseTest">
         <property name="driver" ref="driver"/>

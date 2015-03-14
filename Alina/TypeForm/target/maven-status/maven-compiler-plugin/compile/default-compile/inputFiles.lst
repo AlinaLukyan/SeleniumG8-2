@@ -17,9 +17,9 @@
 /Users/Alinka/repo/SeleniumG8-2/Alina/TypeForm/src/main/java/com/app/pages/questions/LongTextPage.java
 /Users/Alinka/repo/SeleniumG8-2/Alina/TypeForm/src/main/java/com/app/pages/questions/WebsiteQuestionPage.java
 /Users/Alinka/repo/SeleniumG8-2/Alina/TypeForm/src/main/java/com/app/pages/questions/WelcomeScreenConstructorPage.java
-/Users/Alinka/repo/SeleniumG8-2/Alina/TypeForm/src/main/java/com/app/libs/WebElements.java
 /Users/Alinka/repo/SeleniumG8-2/Alina/TypeForm/src/main/java/com/app/pages/questions/DropdownQuestionPage.java
 /Users/Alinka/repo/SeleniumG8-2/Alina/TypeForm/src/main/java/com/app/pages/questions/FileUploadQuestionPage.java
 /Users/Alinka/repo/SeleniumG8-2/Alina/TypeForm/src/main/java/com/app/pages/questions/OpinionScaleQuestionPage.java
 /Users/Alinka/repo/SeleniumG8-2/Alina/TypeForm/src/main/java/com/app/pages/questions/NumberQuestionPage.java
 /Users/Alinka/repo/SeleniumG8-2/Alina/TypeForm/src/main/java/com/app/pages/TypeFormBuilderPage.java
+/Users/Alinka/repo/SeleniumG8-2/Alina/TypeForm/src/main/java/com/app/utils/WebElements.java

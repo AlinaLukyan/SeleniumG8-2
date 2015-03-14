@@ -18,6 +18,8 @@ public class TypeFormBuilderPage {
 
     @Autowired
     private Actions actions;
+    @Autowired
+    private WelcomeScreenConstructorPage welcomeScreenConstructorPage;
 
     @Value("${TypeFormBuilderPage.formEntered}")
     private String formEnteredLocator;
@@ -42,14 +44,14 @@ public class TypeFormBuilderPage {
     public WelcomeScreenConstructorPage enterWelcomeScreenConstructor() {
         welcomeScreenButton = driver.findElement(Utils.getLocatorByType(welcomeScreenButtonLocator));
         welcomeScreenButton.click();
-        return new WelcomeScreenConstructorPage(driver);
+        return welcomeScreenConstructorPage;
     }
 
     public WelcomeScreenConstructorPage dragAndDropWelcomeScreen() {
         welcomeScreenButton = driver.findElement(Utils.getLocatorByType(welcomeScreenButtonLocator));
         dragAndDropSpot = driver.findElement(Utils.getLocatorByType(dragAndDropSpotLocator));
         actions.dragAndDrop(welcomeScreenButton, dragAndDropSpot).build().perform();
-        return new WelcomeScreenConstructorPage(driver);
+        return welcomeScreenConstructorPage;
     }
 
     public void setFormEnteredLocator(String formEnteredLocator) {
@@ -63,5 +65,4 @@ public class TypeFormBuilderPage {
     public void setDragAndDropSpotLocator(String dragAndDropSpotLocator) {
         this.dragAndDropSpotLocator = dragAndDropSpotLocator;
     }
-
 }

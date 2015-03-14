@@ -19,9 +19,12 @@ public class TypeFormPage {
 
     @Autowired
     Actions action;
-
     @Autowired
     NewFormPage newFormPage;
+    @Autowired
+    TypeFormBuilderPage typeFormBuilderPage;
+    @Autowired
+    ConfirmDeletePage confirmDeletePage;
 
     private WebElement newTypeFormButton;
     private List<WebElement> activeForms;
@@ -42,10 +45,7 @@ public class TypeFormPage {
 
     public TypeFormPage(WebDriver driver){
         this.driver = driver;
-//        super(driver);
-//        this.driver = driver;
-//        PageFactory.initElements(driver, this);
-//        action = new Actions(driver);
+        action = new Actions(driver);
     }
 
     public int getTotalFormNumber() {
@@ -85,7 +85,7 @@ public class TypeFormPage {
 //                deleteButton.click();
             }
         }
-        return new ConfirmDeletePage(driver);
+        return confirmDeletePage;
     }
 
     /**
@@ -101,7 +101,7 @@ public class TypeFormPage {
             emptyTypeForms.get(0).click();
         }
         driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
-        return new TypeFormBuilderPage(driver);
+        return typeFormBuilderPage;
     }
 
     public void setNewTypeFormButtonLocator(String newTypeFormButtonLocator) {
