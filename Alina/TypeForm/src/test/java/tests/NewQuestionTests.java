@@ -5,16 +5,29 @@ import com.app.pages.TypeFormBuilderPage;
 import com.app.pages.TypeFormPage;
 import com.app.pages.questions.WelcomeScreenConstructorPage;
 import org.openqa.selenium.support.PageFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.test.context.ContextConfiguration;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+@ContextConfiguration(locations={
+        "/page-context.xml",
+        "/test-context.xml",
+})
 public class NewQuestionTests extends BaseTest {
 
-    @Test(enabled = false)
+    @Autowired
+    TypeFormPage typeFormPage;
+
+    @Value("${welcomeText}")
+    private String welcomeText;
+
+    @Test
     public void addWelcomeScreen() {
         String welcomeText = "Welcome text goes here. This is just a test";
 
-        TypeFormPage typeFormPage = PageFactory.initElements(driver, TypeFormPage.class);
+        typeFormPage = PageFactory.initElements(driver, TypeFormPage.class);
         TypeFormBuilderPage typeFormBuilderPage = typeFormPage.enterEmptyTypeForm();
         WelcomeScreenConstructorPage welcomeScreenConstructorPage = typeFormBuilderPage.enterWelcomeScreenConstructor();
         welcomeScreenConstructorPage.addNewWelcomeScreen(welcomeText);
