@@ -12,6 +12,10 @@ import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * No batch runs as of now. Only one-by-one test runs allowed, otherwise each next test is gonna fail.
+ */
+
 @ContextConfiguration(locations={
         "/page-context.xml",
         "/test-context.xml",

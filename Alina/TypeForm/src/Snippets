@@ -34,3 +34,20 @@ public void shouldntSaveTargetUnknownIds() throws Exception {
     createPage.withCampaignName("SELENIUM").withAgent("firefox").withAssignee("tom").withProduct(0).withCampaignTargetsIds(1, 2, 3, 4);
     createPage.save().hasNumberOfErrors(1);
 }
+
+
+    public boolean isElementPresent(String elementLocator) {
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+        boolean result = driver.findElements(getLocatorByType(elementLocator)).size() > 0;
+        driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT, TimeUnit.SECONDS);
+        return result;
+//        try {
+//            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+//            driver.findElement(By.xpath(elementLocator));
+//            return true;
+//        } catch (NoSuchElementException e) {
+//            return false;
+//        } finally {
+//            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//        }
+    }

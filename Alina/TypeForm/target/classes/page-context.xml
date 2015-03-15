@@ -31,26 +31,14 @@
 
     <bean id="newFormPage" class="com.app.pages.NewFormPage">
         <constructor-arg ref="driver"/>
-        <!--<property name="formNameInputLocator" value="${NewFormPage.formNameInput}"/>-->
-        <!--<property name="formLanguageSelectButtonLocator" value="${NewFormPage.formLanguageSelectButton}"/>-->
-        <!--<property name="formTypeSelectButtonLocator" value="${NewFormPage.formTypeSelectButton}"/>-->
-        <!--<property name="buildButtonLocator" value="${NewFormPage.buildButton}"/>-->
     </bean>
 
     <bean id="typeFormPage" class="com.app.pages.TypeFormPage">
         <constructor-arg ref="driver"/>
-        <!--<property name="newTypeFormButtonLocator" value="TypeFormPage.newTypeFormButton"/>-->
-        <!--<property name="activeFormsLocator" value="TypeFormPage.activeForms"/>-->
-        <!--<property name="formGridLocator" value="TypeFormPage.formGrid"/>-->
-        <!--<property name="deleteButtonLocator" value="TypeFormPage.deleteButton"/>-->
-        <!--<property name="emptyTypeFormsLocator" value="TypeFormPage.emptyTypeForms"/>-->
     </bean>
 
     <bean id="typeFormBuilderPage" class="com.app.pages.TypeFormBuilderPage">
         <constructor-arg ref="driver"/>
-        <!--<property name="formEnteredLocator" value="TypeFormBuilderPage.formEntered"/>-->
-        <!--<property name="welcomeScreenButtonLocator" value="TypeFormBuilderPage.welcomeScreenButton"/>-->
-        <!--<property name="dragAndDropSpotLocator" value="TypeFormBuilderPage.dragAndDropSpot"/>-->
     </bean>
 
     <bean id="welcomeScreenConstructorPage" class="com.app.pages.questions.WelcomeScreenConstructorPage">
@@ -62,6 +50,10 @@
     </bean>
 
     <bean id="confirmDeletePage" class="com.app.pages.ConfirmDeletePage">
+        <constructor-arg ref="driver"/>
+    </bean>
+
+    <bean id="utils" class="com.app.utils.Utils">
         <constructor-arg ref="driver"/>
     </bean>
 

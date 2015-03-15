@@ -3,30 +3,25 @@ package com.app.utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * This is a class to substitute WebElements.java. It contains only the most complex methods.
+ * Some of the methods are not being used as of now, but they will be as we go with writing more tests
+ */
 public class Utils {
 
     private static final Logger LOG = LoggerFactory.getLogger(Utils.class);
 
-    WebDriver driver;
+    private WebDriver driver;
     public static final int DEFAULT_WAIT = 30;
 
     public Utils(WebDriver driver){
         this.driver = driver;
-        PageFactory.initElements(driver, this);
-    }
-
-    /**
-     * The method refreshes a current page
-     */
-    public void refreshPage() {
-        driver.navigate().refresh();
     }
 
     public void selectCheckBox(String checkBoxSetLocator, boolean checkBoxState) {
@@ -50,25 +45,15 @@ public class Utils {
         boolean result = driver.findElements(getLocatorByType(elementLocator)).size() > 0;
         driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT, TimeUnit.SECONDS);
         return result;
-//        try {
-//            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-//            driver.findElement(By.xpath(elementLocator));
-//            return true;
-//        } catch (NoSuchElementException e) {
-//            return false;
-//        } finally {
-//            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//        }
     }
 
     /**
      * The method implements selecting elements from a drop-down list
      */
-    public void selectFromDropDown(String selectButtonLocator, String elementListLocator, String elementText) {
-        WebElement selectButton = driver.findElement(getLocatorByType(selectButtonLocator));
+    public void selectFromDropDown(WebElement selectButton, By elementListLocator, String elementText) {
         selectButton.click();
 
-        List<WebElement> options = selectButton.findElements(getLocatorByType(elementListLocator));
+        List<WebElement> options = selectButton.findElements(elementListLocator);
         for (WebElement element : options) {
             if (element.getText().equals(elementText)) {
                 element.click();

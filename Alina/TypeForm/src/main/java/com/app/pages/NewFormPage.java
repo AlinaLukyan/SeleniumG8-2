@@ -4,22 +4,25 @@ import com.app.utils.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-
-import java.util.List;
 
 public class NewFormPage {
 
     private WebDriver driver;
+    private static final Logger LOG = LoggerFactory.getLogger(NewFormPage.class);
+
+    @Autowired
+    private Utils utils;
+    @Autowired
+    private TypeFormBuilderPage typeFormBuilderPage;
 
     private WebElement formNameInput;
     private WebElement formLanguageSelectButton;
     private WebElement formTypeSelectButton;
     private WebElement buildButton;
-
-    @Autowired
-    private TypeFormBuilderPage typeFormBuilderPage;
 
     @Value("${NewFormPage.formNameInput}")
     private String formNameInputLocator;
@@ -29,6 +32,10 @@ public class NewFormPage {
     private String formTypeSelectButtonLocator;
     @Value("${NewFormPage.buildButton}")
     private String buildButtonLocator;
+    @Value("${NewFormPage.formLanguageList}")
+    private String formLanguageListLocator;
+    @Value("${NewFormPage.formTypeList}")
+    private String formTypeListLocator;
 
     public NewFormPage(WebDriver driver) {
         this.driver = driver;
@@ -43,27 +50,15 @@ public class NewFormPage {
 
     public NewFormPage withFormLanguage(String formLanguage){
         formLanguageSelectButton = driver.findElement(Utils.getLocatorByType(formLanguageSelectButtonLocator));
-        formLanguageSelectButton.click();
-        List<WebElement> options = formLanguageSelectButton.findElements(By.xpath("//div[@class='select2-result-label']"));
-        for (WebElement element : options){
-            if(element.getText().equals(formLanguage)) {
-                element.click();
-                break;
-            }
-        }
+        By listLocator = Utils.getLocatorByType(formLanguageListLocator);
+        utils.selectFromDropDown(formLanguageSelectButton, listLocator, formLanguage);
         return this;
     }
 
     public NewFormPage withFormType(String formType) {
         formTypeSelectButton = driver.findElement(Utils.getLocatorByType(formTypeSelectButtonLocator));
-        formTypeSelectButton.click();
-        List<WebElement> options = formTypeSelectButton.findElements(By.xpath("//div[@class='select2-result-label']"));
-        for (WebElement element : options) {
-            if (element.getText().equals(formType)) {
-                element.click();
-                break;
-            }
-        }
+        By listLocator = Utils.getLocatorByType(formTypeListLocator);
+        utils.selectFromDropDown(formTypeSelectButton, listLocator, formType);
         return this;
     }
 
@@ -89,4 +84,12 @@ public class NewFormPage {
         this.buildButtonLocator = buildButtonLocator;
     }
 
+
+    public void setFormLanguageListLocator(String formLanguageListLocator) {
+        this.formLanguageListLocator = formLanguageListLocator;
+    }
+
+    public void setFormTypeListLocator(String formTypeListLocator) {
+        this.formTypeListLocator = formTypeListLocator;
+    }
 }

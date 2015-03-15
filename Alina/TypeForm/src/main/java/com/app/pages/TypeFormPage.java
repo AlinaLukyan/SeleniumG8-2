@@ -18,13 +18,13 @@ public class TypeFormPage {
     private WebDriver driver;
 
     @Autowired
-    Actions action;
+    private Actions action;
     @Autowired
-    NewFormPage newFormPage;
+    private NewFormPage newFormPage;
     @Autowired
-    TypeFormBuilderPage typeFormBuilderPage;
+    private TypeFormBuilderPage typeFormBuilderPage;
     @Autowired
-    ConfirmDeletePage confirmDeletePage;
+    private ConfirmDeletePage confirmDeletePage;
 
     private WebElement newTypeFormButton;
     private List<WebElement> activeForms;
@@ -45,7 +45,7 @@ public class TypeFormPage {
 
     public TypeFormPage(WebDriver driver){
         this.driver = driver;
-        action = new Actions(driver);
+//        action = new Actions(driver);
     }
 
     public int getTotalFormNumber() {

@@ -3,13 +3,15 @@ package com.app.pages;
 import com.app.utils.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 
 
 public class LogInPage {
 
     private WebDriver driver;
+    private final static Logger LOG = LoggerFactory.getLogger(LogInPage.class);
 
     @Value("${LogInPage.usernameInput}")
     private String userInputLocator;
@@ -22,13 +24,13 @@ public class LogInPage {
     private WebElement passwordInput;
     private WebElement loginButton;
 
+
     public LogInPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver, this);
     }
 
     public NewFormPage logIn(String username, String password){
-
+        LOG.debug(this.toString());
         usernameInput = driver.findElement(Utils.getLocatorByType(userInputLocator));
         usernameInput.clear();
         usernameInput.sendKeys(username);
@@ -50,5 +52,18 @@ public class LogInPage {
 
     public void setLoginButtonLocator(String loginButtonLocator) {
         this.loginButtonLocator = loginButtonLocator;
+    }
+
+    @Override
+    public String toString() {
+        return "LogInPage{" +
+                "driver=" + driver +
+                ", userInputLocator='" + userInputLocator + '\'' +
+                ", passwordInputLocator='" + passwordInputLocator + '\'' +
+                ", loginButtonLocator='" + loginButtonLocator + '\'' +
+                ", usernameInput=" + usernameInput +
+                ", passwordInput=" + passwordInput +
+                ", loginButton=" + loginButton +
+                '}';
     }
 }
