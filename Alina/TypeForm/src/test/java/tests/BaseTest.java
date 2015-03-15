@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
@@ -46,17 +45,13 @@ public class BaseTest extends AbstractTestNGSpringContextTests {
 //        driver = WebDriverFactory.getDriver(desiredCapabilities);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT, TimeUnit.SECONDS);
+        driver.get(url);
+        logInPage.logIn(userName, password);
     }
 
     @BeforeMethod
     public void methodSetUp() {
         driver.get(url);
-        logInPage.logIn(userName, password);
-    }
-
-    @AfterMethod
-    public void methodTearDown() {
-        header.logOut();
     }
 
     @AfterClass

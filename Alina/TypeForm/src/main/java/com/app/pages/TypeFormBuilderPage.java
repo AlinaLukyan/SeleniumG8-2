@@ -15,6 +15,7 @@ public class TypeFormBuilderPage {
     private WebElement formEntered;
     private WebElement welcomeScreenButton;
     private WebElement dragAndDropSpot;
+    private WebElement welcomeScreenText;
 
     @Autowired
     private Actions actions;
@@ -27,6 +28,8 @@ public class TypeFormBuilderPage {
     private String welcomeScreenButtonLocator;
     @Value("${TypeFormBuilderPage.dragAndDropSpot}")
     private String dragAndDropSpotLocator;
+    @Value("${TypeFormBuilderPage.welcomeScreenText}")
+    private String welcomeScreenTextLocator;
 
     public TypeFormBuilderPage(WebDriver driver) {
         this.driver = driver;
@@ -54,6 +57,11 @@ public class TypeFormBuilderPage {
         return welcomeScreenConstructorPage;
     }
 
+    public String getWelcomeScreenText() {
+        welcomeScreenText = driver.findElement(Utils.getLocatorByType(welcomeScreenTextLocator));
+        return welcomeScreenText.getText();
+    }
+
     public void setFormEnteredLocator(String formEnteredLocator) {
         this.formEnteredLocator = formEnteredLocator;
     }
@@ -64,5 +72,9 @@ public class TypeFormBuilderPage {
 
     public void setDragAndDropSpotLocator(String dragAndDropSpotLocator) {
         this.dragAndDropSpotLocator = dragAndDropSpotLocator;
+    }
+
+    public void setWelcomeScreenTextLocator(String welcomeScreenTextLocator) {
+        this.welcomeScreenTextLocator = welcomeScreenTextLocator;
     }
 }

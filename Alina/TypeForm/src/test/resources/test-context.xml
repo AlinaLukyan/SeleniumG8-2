@@ -16,6 +16,7 @@
     </bean>
 
     <bean id="driver" class="org.openqa.selenium.firefox.FirefoxDriver" />
+    <!--<bean id="driver" class="org.openqa.selenium.chrome.ChromeDriver"/>-->
 
     <bean id="desiredCapabilities" class="org.openqa.selenium.remote.DesiredCapabilities"/>
     <!--<bean id="webDriverFactoryMode" class="ru.stqa.selenium.factory.WebDriverFactoryMode"/>-->

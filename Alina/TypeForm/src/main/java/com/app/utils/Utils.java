@@ -1,6 +1,7 @@
 package com.app.utils;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
@@ -78,6 +79,13 @@ public class Utils {
                 throw new IndexOutOfBoundsException("Option " + option + " wasn't found");
             }
         }
+    }
+
+    public void setInnerHTML(String elementClass, String inputText) {
+        String jScript = "var myList = document.getElementsByClassName(\"" + elementClass + "\");"
+                + "myList[0].innerHTML=\"" + inputText + "\";";
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript(jScript);
     }
 
     /**

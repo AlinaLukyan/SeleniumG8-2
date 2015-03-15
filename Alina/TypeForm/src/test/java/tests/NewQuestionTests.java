@@ -4,7 +4,6 @@ package tests;
 import com.app.pages.TypeFormBuilderPage;
 import com.app.pages.TypeFormPage;
 import com.app.pages.questions.WelcomeScreenConstructorPage;
-import org.openqa.selenium.support.PageFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
@@ -18,26 +17,26 @@ import org.testng.annotations.Test;
 public class NewQuestionTests extends BaseTest {
 
     @Autowired
-    TypeFormPage typeFormPage;
+    private TypeFormPage typeFormPage;
+    @Autowired
+    private TypeFormBuilderPage typeFormBuilderPage;
+    @Autowired
+    private WelcomeScreenConstructorPage welcomeScreenConstructorPage;
 
-    @Value("${welcomeText}")
+    @Value("${NewQuestionTests.welcomeText}")
     private String welcomeText;
 
     @Test
     public void addWelcomeScreen() {
-        String welcomeText = "Welcome text goes here. This is just a test";
+        typeFormBuilderPage = typeFormPage.enterEmptyTypeForm();
+        welcomeScreenConstructorPage = typeFormBuilderPage.enterWelcomeScreenConstructor();
+        typeFormBuilderPage = welcomeScreenConstructorPage.addWelcomeScreenText(welcomeText).submitNewWelcomeScreen();
 
-        typeFormPage = PageFactory.initElements(driver, TypeFormPage.class);
-        TypeFormBuilderPage typeFormBuilderPage = typeFormPage.enterEmptyTypeForm();
-        WelcomeScreenConstructorPage welcomeScreenConstructorPage = typeFormBuilderPage.enterWelcomeScreenConstructor();
-        welcomeScreenConstructorPage.addNewWelcomeScreen(welcomeText);
-
-        Assert.assertEquals(welcomeScreenConstructorPage.getPreviewWelcomeText(), welcomeText, "Both the text messages, entered and displayed, are equal");
+        Assert.assertEquals(typeFormBuilderPage.getWelcomeScreenText(), welcomeText, "Both the text messages, entered and displayed, are equal");
     }
 
     @Test
     public void addShortTextQuestion() {
-        Assert.fail();
 
     }
 

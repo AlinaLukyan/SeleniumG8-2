@@ -8,5 +8,7 @@ ToDo:
 - Asserts for every test
 - Spring config (Default wait constants)
 - Actions, Select, Alert, WebDriverWait
-- Varargs
--
+
+
+- Use Varargs methods
+- Use Relative URLs
