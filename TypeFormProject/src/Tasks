@@ -1,0 +1,35 @@
+
+ToDo:
+- WebDriverFactory (Singleton)
+- try-catch if needed
+- Spring config (Default wait constants)
+- Actions, Select, Alert, WebDriverWait
+- testNG xml configuration
+- Provide data by notations
+- apache.httpcomponents
+- screen-shots
+- cookies instead of login
+- AutoIT, Robot class to handle window-based pop-ups
+- Concurrent execution of test scripts
+- Try selenium Grid
+- Setting Priority in TestNG
+
+
+- do not commit redundant files
+- secured gitHub
+
+- Use Varargs methods
+- Use Relative URL-paths
+
+- verify the title of the web page
+
+- Is used locally, not committed to source control
+- DEBUG, INFO, !WARN, ERROR
+- log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-dd-MM HH:mm:ss}  %5p [%20c{2}:%-4L] : %m%n
+#5p - 5 symbols (TRACE, INFO, etc.)
+#c - path
+#m - message
+#n - перевод каретки
+#-4L - выравнивание по правому/левому краю
+#{2} - 2 levels - class-package
+

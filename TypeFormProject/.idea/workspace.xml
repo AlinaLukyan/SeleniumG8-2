@@ -1,0 +1,2045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eee525f3-1e10-4ac3-bc08-079f2312b49d" name="Default" comment="New implementation for isElementPresent">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/tests/BaseTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/test-classes/tests/BaseTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/utils/ConfigData.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/utils/ConfigData.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/ConfirmDeletePage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/ConfirmDeletePage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/tests/DragAndDropTests.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/test-classes/tests/DragAndDropTests.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/DropdownQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/DropdownQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/EmailQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/EmailQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/utils/ExcelDriver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/utils/ExcelDriver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/FileUploadQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/FileUploadQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/target/classes/lesson3/Fix.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/Header.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/Header.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/LegalQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/LegalQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/LogInPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/LogInPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/tests/LogInTests.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/LongTextQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/LongTextQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/target/classes/lesson3/Main$Fight.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/target/classes/lesson3/Main.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/tests/ManageTypeFormTests.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/test-classes/tests/ManageTypeFormTests.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/MultipleChoiceQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/MultipleChoiceQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/NewFormPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/NewFormPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/tests/NewQuestionTests.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/test-classes/tests/NewQuestionTests.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/NumberQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/NumberQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/OpinionScaleQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/OpinionScaleQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/utils/PageObject.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/utils/PageObjectBeanPostProcessor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/PaymentQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/PaymentQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/PictureChoiceQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/PictureChoiceQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/QuestionGroupQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/QuestionGroupQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/RatingQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/RatingQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/target/classes/lesson3/Robot.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/test-classes/tests/SeleniumTestCase.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/utils/SeleniumTestCaseContext.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/utils/SeleniumTestExecutionListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/ShortTextQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/ShortTextQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/target/classes/lesson3/Squeezer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/target/classes/lesson3/SqueezersMaster.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/StatementQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/StatementQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/target/classes/lesson3/Terminator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/target/classes/lesson3/TerminatorsMaster.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/utils/TestScope.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/TypeFormBuilderPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/TypeFormBuilderPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/TypeFormPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/TypeFormPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/utils/Utils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/utils/Utils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/WebsiteQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/WebsiteQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/WelcomeScreenConstructorPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/WelcomeScreenConstructorPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/app/pages/questions/YesNowQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/com/app/pages/questions/YesNowQuestionPage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/admin.typeform-1.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/admin.typeform-1.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/test_data/testData.xls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/test_data/testData.xls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/resources/test_data/testData.xls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/test_data/testData.xls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/test/java/tests/BaseTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.BaseTest/Command line test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/Command line suite/Command line test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.BaseTest/Command line test.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/Command line suite/Command line test.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.BaseTest/Command line test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/Command line suite/Command line test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/utils/ConfigData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/utils/ConfigData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/ConfirmDeletePage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/ConfirmDeletePage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/tests/DragAndDropTests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/test/java/tests/DragAndDropTests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/DropdownQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/DropdownQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/EmailQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/utils/ExcelDriver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/utils/ExcelDriver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/FileUploadQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/FileUploadQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/src/main/java/lesson3/Fix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/Header.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/Header.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/LegalQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/LogInPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/LogInPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/tests/LogInTests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/LongTextQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/LongTextQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/src/main/java/lesson3/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/tests/ManageTypeFormTests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/test/java/tests/ManageTypeFormTests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_2_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__cglib_cglib_nodep_2_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__com_beust_jcommander_1_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_codeborne_phantomjsdriver_1_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__com_codeborne_phantomjsdriver_1_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__com_google_code_gson_gson_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_14_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__com_google_guava_guava_14_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_opera_operadriver_1_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__com_opera_operadriver_1_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_opera_operalaunchers_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__com_opera_operalaunchers_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_5_2_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__io_netty_netty_3_5_2_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_3_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__net_java_dev_jna_jna_3_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_platform_3_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__net_java_dev_jna_platform_3_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_15.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_15.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_15.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_15.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_21.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_21.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_apache_commons_commons_exec_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_3_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_3_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_apache_poi_poi_3_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_beanshell_bsh_2_0b4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_beanshell_bsh_2_0b4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_8_1_15_v20140411.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_8_1_15_v20140411.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_8_1_15_v20140411.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_8_1_15_v20140411.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_8_1_15_v20140411.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_8_1_15_v20140411.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_websocket_8_1_15_v20140411.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_eclipse_jetty_jetty_websocket_8_1_15_v20140411.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ini4j_ini4j_0_5_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_ini4j_ini4j_0_5_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_htmlunit_driver_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_htmlunit_driver_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_44_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_springframework_spring_aop_4_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_springframework_spring_beans_4_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_springframework_spring_context_4_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_springframework_spring_core_4_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_springframework_spring_expression_4_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_springframework_spring_test_4_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_testng_testng_6_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webbitserver_webbit_0_4_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_webbitserver_webbit_0_4_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__org_yaml_snakeyaml_1_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ru_stqa_selenium_webdriver_factory_1_1_45.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__ru_stqa_selenium_webdriver_factory_1_1_45.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__xalan_serializer_2_7_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__xalan_xalan_2_7_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/MultipleChoiceQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/MultipleChoiceQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyLog.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/MyLog.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/NewFormPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/NewFormPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/tests/NewQuestionTests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/test/java/tests/NewQuestionTests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/NumberQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/NumberQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/OpinionScaleQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/OpinionScaleQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/utils/PageObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/utils/PageObjectBeanPostProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/PaymentQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/PaymentQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/PictureChoiceQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/PictureChoiceQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/QuestionGroupQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/QuestionGroupQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/RatingQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/RatingQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/src/main/java/lesson3/Robot.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/RobotFight.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/test/java/tests/SeleniumTestCase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/utils/SeleniumTestCaseContext.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/utils/SeleniumTestExecutionListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/ShortTextQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/ShortTextQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Snippets" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/Snippets" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/src/main/java/lesson3/Squeezer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/src/main/java/lesson3/SqueezersMaster.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/StatementQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/StatementQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/TEST-TestSuite.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.BaseTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tasks" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/Tasks" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/src/main/java/lesson3/Terminator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/src/main/java/lesson3/TerminatorsMaster.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/utils/TestScope.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/TestSuite.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TypeForm.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/TypeFormBuilderPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/TypeFormBuilderPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/TypeFormPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/TypeFormPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/utils/Utils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/utils/Utils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/WebsiteQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/WebsiteQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/WelcomeScreenConstructorPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/WelcomeScreenConstructorPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/pages/questions/YesNowQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/YesNowQuestionPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.BaseTest/classes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/Command line suite/classes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/.idea/dbnavigator.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/dbnavigator.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/emailable-report.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.BaseTest/groups.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/Command line suite/groups.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.BaseTest/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/Command line suite/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/logback-test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/logback-test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/test/resources/logback-test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/test-classes/logback-test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/logback.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/resources/logback.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/logback.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.BaseTest/main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/Command line suite/main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.BaseTest/methods-alphabetical.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/Command line suite/methods-alphabetical.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.BaseTest/methods-not-run.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/Command line suite/methods-not-run.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.BaseTest/methods.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/Command line suite/methods.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/myAppName.log.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/log/myAppName.log.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/myAppName.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/log/myAppName.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/page-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/page-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/resources/page-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/page-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/poi_3_8_20120326.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/poi_3_8_20120326.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/poi_3_8_201203261.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/libraries/poi_3_8_201203261.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/maven-archiver/pom.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.BaseTest/reporter-output.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/Command line suite/reporter-output.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/test-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/test-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/test/resources/test-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/test-classes/test-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/test.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/test.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/test/resources/test.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/test-classes/test.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/testng-results.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/testng.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/testng.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.BaseTest/testng.xml.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/Command line suite/testng.xml.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/testng.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.BaseTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.BaseTest/toc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/surefire-reports/Command line suite/toc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/ui-map.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ui-map.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/resources/ui-map.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/target/classes/ui-map.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RobotFights/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/.idea/dbnavigator.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/RobotFight.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/src/main/java/lesson3/Fix.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/src/main/java/lesson3/Main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/src/main/java/lesson3/Robot.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/src/main/java/lesson3/Squeezer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/src/main/java/lesson3/SqueezersMaster.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/src/main/java/lesson3/Terminator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/src/main/java/lesson3/TerminatorsMaster.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/target/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/target/classes/lesson3/Fix.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/target/classes/lesson3/Main$Fight.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/target/classes/lesson3/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/target/classes/lesson3/Robot.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/target/classes/lesson3/Squeezer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/target/classes/lesson3/SqueezersMaster.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/target/classes/lesson3/Terminator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/RobotFight/target/classes/lesson3/TerminatorsMaster.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/dbnavigator.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__cglib_cglib_nodep_2_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__com_beust_jcommander_1_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__com_codeborne_phantomjsdriver_1_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__com_google_code_gson_gson_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__com_google_guava_guava_14_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__com_opera_operadriver_1_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__com_opera_operalaunchers_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__io_netty_netty_3_5_2_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__junit_junit_4_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__net_java_dev_jna_jna_3_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__net_java_dev_jna_platform_3_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_15.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_15.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_21.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_apache_commons_commons_exec_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_3_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_beanshell_bsh_2_0b4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_8_1_15_v20140411.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_8_1_15_v20140411.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_8_1_15_v20140411.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_eclipse_jetty_jetty_websocket_8_1_15_v20140411.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_ini4j_ini4j_0_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_2_44_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_44_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_44_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_htmlunit_driver_2_44_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_2_44_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_2_44_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_2_44_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_2_44_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_44_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_springframework_spring_aop_4_1_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_springframework_spring_beans_4_1_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_springframework_spring_context_4_1_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_springframework_spring_core_4_1_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_springframework_spring_expression_4_1_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_springframework_spring_test_4_1_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_springframework_spring_test__.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_testng_testng_6_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_webbitserver_webbit_0_4_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__org_yaml_snakeyaml_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__ru_stqa_selenium_webdriver_factory_1_1_45.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__xalan_serializer_2_7_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__xalan_xalan_2_7_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/MyLog.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/Snippets" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/Tasks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/config.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/ConfirmDeletePage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/Header.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/LogInPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/NewFormPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/TypeFormBuilderPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/TypeFormPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/DropdownQuestionPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/EmailQuestionPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/FileUploadQuestionPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/LegalQuestionPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/MultipleChoiceQuestionPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/NumberQuestionPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/OpinionScaleQuestionPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/PaymentQuestionPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/PictureChoiceQuestionPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/QuestionGroupQuestionPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/RatingQuestionPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/StatementQuestionPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/WebsiteQuestionPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/WelcomeScreenConstructorPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/YesNowQuestionPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/utils/Utils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/resources/logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/resources/page-context.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/resources/ui-map.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/test/java/tests/BaseTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/test/java/tests/DragAndDropTests.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/test/java/tests/ManageTypeFormTests.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/test/java/tests/NewQuestionTests.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/test/resources/logback-test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/test/resources/test-context.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/test/resources/test.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/admin.typeform-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/ConfirmDeletePage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/Header.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/LogInPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/NewFormPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/TypeFormBuilderPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/TypeFormPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/DropdownQuestionPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/EmailQuestionPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/FileUploadQuestionPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/LegalQuestionPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/LongTextPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/MultipleChoiceQuestionPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/NumberQuestionPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/OpinionScaleQuestionPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/PaymentQuestionPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/PictureChoiceQuestionPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/QuestionGroupQuestionPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/RatingQuestionPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/ShortTextPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/StatementQuestionPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/WebsiteQuestionPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/WelcomeScreenConstructorPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/pages/questions/YesNowQuestionPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/utils/Utils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/com/app/utils/WebElements.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/page-context.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/classes/ui-map.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/TEST-tests.BaseTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/emailable-report.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/testng-results.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/testng.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/tests.BaseTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/tests.BaseTest/Command line test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/tests.BaseTest/Command line test.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/tests.BaseTest/Command line test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/tests.BaseTest/classes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/tests.BaseTest/groups.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/tests.BaseTest/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/tests.BaseTest/main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/tests.BaseTest/methods-alphabetical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/tests.BaseTest/methods-not-run.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/tests.BaseTest/methods.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/tests.BaseTest/reporter-output.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/tests.BaseTest/testng.xml.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/surefire-reports/tests.BaseTest/toc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/test-classes/logback-test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/test-classes/test-context.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/test-classes/test.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/test-classes/tests/BaseTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/test-classes/tests/DragAndDropTests.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/test-classes/tests/ManageTypeFormTests.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/target/test-classes/tests/NewQuestionTests.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Anton/lesson8/FirstTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Anton/lesson8/SecondTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Anton/lesson8/ThirdTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/TypeForm.iml" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/TypeForm.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/LongTextPage.java" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/EmailQuestionPage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Alina/TypeForm/src/main/java/com/app/pages/questions/ShortTextPage.java" afterPath="$PROJECT_DIR$/../TypeFormProject_SpringImplementation/src/main/java/com/app/pages/questions/LegalQuestionPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../IdeaProjects" afterPath="$PROJECT_DIR$/../../IdeaProjects" />
+    </list>
+    <ignored path="TypeForm.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/" />
+    <ignored path="../RobotFights/.idea/" />
+    <ignored path="../TypeFormProject_SpringImplementation/.idea/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="TypeForm" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="BaseTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="645">
+              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogInTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/LogInTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5604396" vertical-offset="0" max-vertical-offset="455">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+              <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExcelDriver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/utils/ExcelDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManageTypeFormTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/ManageTypeFormTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewQuestionTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/NewQuestionTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2115">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DragAndDropTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/DragAndDropTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1590">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/app/pages/questions/NewYesNowQuestionPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/pages/questions/YesNowQuestionPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/pages/questions/WelcomeScreenPage.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/notes/Snippets" />
+        <option value="$PROJECT_DIR$/src/main/resources/notes/TestCases" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/libs/Driver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/libs/WebDriver.java" />
+        <option value="$PROJECT_DIR$/src/config.properties" />
+        <option value="$PROJECT_DIR$/src/UIMapping.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/libs/ConfigData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/libs/WebElements.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/UIMapping.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/TestData.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/utils/WebElements.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/BaseTestTemp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/QuestionDragAndDropTests.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/page-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/Snippets" />
+        <option value="$PROJECT_DIR$/src/test/resources/logback-test.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/utils/SeleniumTestCaseContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/utils/TestScope.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/utils/SeleniumTestCaseExecutionListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/utils/SeleniumTestExecutionListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/utils/PageObjectBeanPostProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/utils/PageObject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/SeleniumTestCase.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/test-context.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/utils/ExcelDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/test_data/testData.csv" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/pages/Header.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/ui-map.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/pages/TypeFormPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/pages/TypeFormBuilderPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/utils/ConfigData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/pages/ConfirmDeletePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/pages/LogInPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/pages/NewFormPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/pages/questions/ShortTextQuestionPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/pages/questions/WelcomeScreenConstructorPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/DragAndDropTests.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/test.properties" />
+        <option value="$PROJECT_DIR$/src/Tasks" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/LogInTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/ManageTypeFormTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/NewQuestionTests.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/Software/apache-maven/apache-maven-3.2.3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Class structure</id>
+          </State>
+          <State>
+            <id>Code maturity issues</id>
+          </State>
+          <State>
+            <id>Java language level migration aids</id>
+          </State>
+          <State>
+            <id>Javadoc issues</id>
+          </State>
+          <State>
+            <id>Performance issues</id>
+          </State>
+          <State>
+            <id>TestNG</id>
+          </State>
+          <State>
+            <id>Threading issues</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeForm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeForm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeFormProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeForm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeFormProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeForm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeFormProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeForm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeFormProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeForm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeFormProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeForm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeFormProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeForm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeFormProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="140" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="146" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="940" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="140" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="142" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="146" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="940" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="com.intellij.ide.scratch.ScratchpadManager" value="JSON" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tests" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="tests" />
+      <recent name="com.app.pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/test_data" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/Config" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.LogInTests.logIn">
+    <configuration default="false" name="ManageTypeFormTests.theNumberOfFormsShouldIncreaseByOne" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TypeForm" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ManageTypeFormTests" />
+      <option name="METHOD_NAME" value="theNumberOfFormsShouldIncreaseByOne" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DragAndDropTests.dragAndDropWelcomeScreen" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TypeForm" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.DragAndDropTests" />
+      <option name="METHOD_NAME" value="dragAndDropWelcomeScreen" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ManageTypeFormTests.createNewTypeForm" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TypeForm" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ManageTypeFormTests" />
+      <option name="METHOD_NAME" value="createNewTypeForm" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="NewQuestionTests.addWelcomeScreen" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TypeForm" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.NewQuestionTests" />
+      <option name="METHOD_NAME" value="addWelcomeScreen" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="LogInTests.logIn" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TypeForm" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LogInTests" />
+      <option name="METHOD_NAME" value="logIn" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/poi-3.8-20120326.jar" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="TestNG.ManageTypeFormTests.theNumberOfFormsShouldIncreaseByOne" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.DragAndDropTests.dragAndDropWelcomeScreen" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.ManageTypeFormTests.createNewTypeForm" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.NewQuestionTests.addWelcomeScreen" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.LogInTests.logIn" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="TestNG.LogInTests.logIn" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.ManageTypeFormTests.createNewTypeForm" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.NewQuestionTests.addWelcomeScreen" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.DragAndDropTests.dragAndDropWelcomeScreen" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.ManageTypeFormTests.theNumberOfFormsShouldIncreaseByOne" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SQLPlugin.ProjectConfiguration">
+    <queries />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eee525f3-1e10-4ac3-bc08-079f2312b49d" name="Default" comment="" />
+      <created>1424803733350</created>
+      <option name="number" value="Default" />
+      <updated>1424803733350</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Changed from Configs to configs">
+      <created>1425240301388</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1425240301388</updated>
+    </task>
+    <task id="LOCAL-00002" summary="New implementation for isElementPresent">
+      <created>1425249671244</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1425249671244</updated>
+    </task>
+    <task id="LOCAL-00003" summary="New implementation for isElementPresent">
+      <created>1425249695865</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1425249695865</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36195508" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="DBHelper" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17381974" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29971388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="DBOutput" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26754966" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27055702" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Copied all the locators to UIMapping.properties. Did slight page refactoring" />
+    <MESSAGE value="Changed from Configs to configs" />
+    <MESSAGE value="New implementation for isElementPresent" />
+    <option name="LAST_COMMIT_MESSAGE" value="New implementation for isElementPresent" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.44.0/selenium-api-2.44.0-sources.jar!/org/openqa/selenium/WebDriver.java</url>
+          <line>115</line>
+          <properties class="org.openqa.selenium.WebDriver" method="findElement" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="27" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.1.5.RELEASE/spring-test-4.1.5.RELEASE-sources.jar!/org/springframework/test/context/TestContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83511776" vertical-offset="0" max-vertical-offset="1335">
+          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.1.5.RELEASE/spring-beans-4.1.5.RELEASE-sources.jar!/org/springframework/beans/factory/BeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33190578" vertical-offset="2110" max-vertical-offset="4425">
+          <caret line="165" column="10" selection-start-line="165" selection-start-column="10" selection-end-line="165" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.1.5.RELEASE/spring-test-4.1.5.RELEASE-sources.jar!/org/springframework/test/context/support/DependencyInjectionTestExecutionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4496788" vertical-offset="0" max-vertical-offset="1620">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Snippets">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/myAppName.log.1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="39765">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/myAppName.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/logback-test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34168565" vertical-offset="0" max-vertical-offset="439">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.11/poi-3.11.jar!/org/apache/poi/poifs/filesystem/POIFSFileSystem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31991953" vertical-offset="186" max-vertical-offset="3300">
+          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="13731" max-vertical-offset="17610">
+          <caret line="967" column="18" selection-start-line="967" selection-start-column="18" selection-end-line="967" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ui-map.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1065">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/test-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/Header.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/LogInPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <caret line="30" column="80" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/NewFormPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+          <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/TypeFormBuilderPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/TypeFormPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/DropdownQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/EmailQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/FileUploadQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/LegalQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/LongTextQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/MultipleChoiceQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/NumberQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/OpinionScaleQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/PaymentQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/PictureChoiceQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/QuestionGroupQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/RatingQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/ShortTextQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="660">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/StatementQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/WebsiteQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="9" column="97" selection-start-line="9" selection-start-column="97" selection-end-line="9" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/page-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/ConfirmDeletePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57251906" vertical-offset="0" max-vertical-offset="524">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/YesNowQuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.085877866" vertical-offset="0" max-vertical-offset="524">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/pages/questions/WelcomeScreenConstructorPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0877863" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2041984" vertical-offset="0" max-vertical-offset="2145">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/test.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20038168" vertical-offset="0" max-vertical-offset="524">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/utils/ConfigData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="830" max-vertical-offset="1785">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tasks">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51428574" vertical-offset="0" max-vertical-offset="615">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4707113" vertical-offset="765" max-vertical-offset="1515">
+          <caret line="66" column="3" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28242677" vertical-offset="0" max-vertical-offset="478">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TypeForm.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5604396" vertical-offset="0" max-vertical-offset="1335">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/DragAndDropTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1590">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/NewQuestionTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="2115">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ManageTypeFormTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/utils/ExcelDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1710">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/LogInTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5604396" vertical-offset="0" max-vertical-offset="455">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>TypeForm</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>poi-3.8-201203261</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
