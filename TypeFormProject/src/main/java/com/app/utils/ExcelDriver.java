@@ -8,8 +8,7 @@ import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /*
  *  Class that provides methods for extracting data from Excel tables.
@@ -34,13 +33,12 @@ public class ExcelDriver {
         // Get number of data values
         int dataSize = sheet.getPhysicalNumberOfRows() - 2;
         // Look over the table and put key-value pairs into the Map collection
-        for (int k = 2; k < (dataSize + 1); k++) {  //not 2
+        for (int k = 2; k < (dataSize + 1); k ++) {  //not 2
             HSSFCell keyCell = sheet.getRow(k).getCell(0);
             HSSFCell valueCell = sheet.getRow(k).getCell(columnNumber);
             valueCell.setCellType(HSSFCell.CELL_TYPE_STRING);
             testData.put(keyCell.getStringCellValue(), valueCell.getStringCellValue());
         }
-
         input.close();
         return testData;
     }
@@ -71,7 +69,6 @@ public class ExcelDriver {
             valueCell.setCellType(HSSFCell.CELL_TYPE_STRING);
             testData.put(keyCell.getStringCellValue(), valueCell.getStringCellValue());
         }
-
         input.close();
         return testData;
     }
@@ -96,7 +93,7 @@ public class ExcelDriver {
         // Get number of data values
         int dataSize = sheet.getRow(2).getPhysicalNumberOfCells();
         // Look over the table and put key-value pairs into the Map collection
-        for (int k = 0; k < (dataSize); k++) {
+        for (int k = 0; k < (dataSize); k ++) {
             HSSFCell keyCell = sheet.getRow(2).getCell(k);
             HSSFCell valueCell = sheet.getRow(3).getCell(k);
             valueCell.setCellType(HSSFCell.CELL_TYPE_STRING);

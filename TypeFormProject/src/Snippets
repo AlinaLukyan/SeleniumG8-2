@@ -1,21 +1,13 @@
 
 driver.getTitle();
-    
-
 
 WebDriverWait wait = new WebDriverWait(driver, 200);
 wait.until(ExpectedConditions.visibilityOf(formEntered));
 wait.until(ExpectedConditions.not(ExpectedConditions.))
 
-
-
 driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
 
-
-
 Runtime.getRuntime().exec("kill -9" + )
-
-
 
 Thread.sleep
 
@@ -32,15 +24,12 @@ public void shouldntSaveTargetUnknownIds() throws Exception {
 }
 
 
+WebElement element = driver.findElement(By.xpath("YourNumbersXpath"));
+JavascriptExecutor executor = (JavascriptExecutor)driver;
+executor.executeScript("arguments[0].click();", welcomeTextArea);
 
 
-
-            WebElement element = driver.findElement(By.xpath("YourNumbersXpath"));
-            JavascriptExecutor executor = (JavascriptExecutor)driver;
-            executor.executeScript("arguments[0].click();", welcomeTextArea);
-
-
-            String jScript = "var myList = document.getElementsByClassName(\"mceContentBody\");"
-                    +"myList[0].innerHTML=\"Please, display this text\";";
-            JavascriptExecutor executor2 = (JavascriptExecutor)driver;
-            executor2.executeScript(jScript);
+String jScript = "var myList = document.getElementsByClassName(\"mceContentBody\");"
++ "myList[0].innerHTML=\"Please, display this text\";";
+JavascriptExecutor executor2 = (JavascriptExecutor)driver;
+executor2.executeScript(jScript);

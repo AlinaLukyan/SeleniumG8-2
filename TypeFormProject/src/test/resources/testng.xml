@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="TestSuite1">
-    <test name="Test1" group-by-instances="true">
+<suite name="TestSuite1" verbose="2">
+    <test name="Test1">
         <classes>
-            <class name="tests.ManageTypeFormTests" />
-            <class name="tests.LogInTests"/>
+            <class name="tests.ManageTypeFormTest"/>
         </classes>
     </test>
 </suite>
+
