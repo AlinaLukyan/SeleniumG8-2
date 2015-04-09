@@ -13,7 +13,6 @@ import java.util.List;
  */
 public class Database {
    private Connection connection = null;
-   private String jdbcUrl;
    static Logger log = Logger.getLogger(Database.class);
     /*
      *  Constructor opens connection to database using connection string from config.properties file.
@@ -21,7 +20,8 @@ public class Database {
      *  relevant connection string including "_USER"  and "_PASSWORD"
      */
     public Database() throws IOException, ClassNotFoundException, SQLException {
-        jdbcUrl = ConfigData.getConfigValue("PADB_DB");
+
+        String jdbcUrl = ConfigData.getConfigValue("PADB_DB");
         log.info("The JDBC url has been read: " + jdbcUrl);
 
         // Load driver for JDBC class

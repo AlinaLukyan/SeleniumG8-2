@@ -45,7 +45,6 @@ public class WelcomeScreenConstructorPage {
         welcomeTextIFrame = driver.findElement(ConfigData.ui(welcomeTextIFrameLocator));
         driver.switchTo().frame(welcomeTextIFrame);
         utils.setInnerHTML(welcomeTextInput, welcomeText);
-
         driver.switchTo().defaultContent();
         return this;
     }

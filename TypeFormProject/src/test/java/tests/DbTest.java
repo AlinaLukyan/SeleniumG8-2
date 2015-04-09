@@ -35,15 +35,13 @@ public class DbTest {
 
     @Test
     public void deleteFromCountries() throws SQLException {
-        dbOracle.updateDB("DELETE from countries WHERE country_name = 'test'");
+        dbOracle.updateDB("DELETE from countries WHERE country_name = 'Ukraine'");
         Object resultTable = dbOracle.selectTable("SELECT * FROM countries");
         LOG.info("Countries table now contains: " + resultTable);
-//        dbMySQL.updateDB("DELETE FROM table_selenium WHERE id = 2");
     }
 
     @AfterClass
     public void tearDown() throws SQLException {
         dbOracle.quit();
     }
-
 }

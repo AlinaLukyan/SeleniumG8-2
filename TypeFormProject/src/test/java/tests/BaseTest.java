@@ -2,7 +2,6 @@ package tests;
 
 import com.app.pages.LogInPage;
 import com.app.utils.ConfigData;
-import com.app.utils.CookieManager;
 import com.app.utils.ExcelDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -21,7 +20,6 @@ import java.util.concurrent.TimeUnit;
 public class BaseTest {
     protected WebDriver driver;
     protected ExcelDriver excelDriver;
-    protected CookieManager cookieManager;
 
     protected String dataFile = "DATA_FILE";
     private String userName = "userName";
@@ -34,13 +32,6 @@ public class BaseTest {
 
     public static final int DEFAULT_WAIT = 30;
 
-//    @DataProvider(name = "Browser-Driver-Provider")
-//    public DesiredCapabilities[][] browserProvider() {
-//        return new DesiredCapabilities[][] {
-//                { DesiredCapabilities.firefox() } , { DesiredCapabilities.chrome() }
-//        };
-//    }
-
     @BeforeClass ()
     public void setUp() throws Exception {
 //        System.setProperty("webdriver.chrome.driver", "chromedriver");
@@ -50,7 +41,7 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT, TimeUnit.SECONDS);
         driver.get(url);
 
-//        logIn();
+        logIn();
     }
 
     @BeforeMethod ()

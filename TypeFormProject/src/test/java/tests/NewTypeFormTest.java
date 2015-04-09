@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Map;
 
-public class ManageTypeFormTest extends BaseTest {
+public class NewTypeFormTest extends BaseTest {
 
     private String formName;
     private String formType;
@@ -85,7 +85,4 @@ public class ManageTypeFormTest extends BaseTest {
 
 //        Assert.assertEquals(, typeFormPage.getTotalFormNumber());
     }
-
-
-    //quizeefull.net
 }
