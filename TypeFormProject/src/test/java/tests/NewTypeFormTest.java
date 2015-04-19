@@ -28,8 +28,6 @@ public class NewTypeFormTest extends BaseTest {
         driver.navigate().to(url);
         Map dataMap = excelDriver.getData(ConfigData.getConfigValue(dataFile), "createNewTypeForm");
 
-        System.out.println("Value = " + dataMap.get("Login"));
-
         formName = dataMap.get("formName").toString();
         formType = dataMap.get("formType").toString();
         formLanguage = dataMap.get("formLanguage").toString();
@@ -39,7 +37,7 @@ public class NewTypeFormTest extends BaseTest {
         TypeFormBuilderPage typeFormBuilderPage = newFormPage.withFormName(formName)
                 .withFormLanguage(formLanguage)
                 .withFormType(formType)
-                .openFormBuilderPage();
+                .buildTypeForm();
 
         Assert.assertTrue(typeFormBuilderPage.getFormEntered().getText().contains(formName));
     }
@@ -64,7 +62,7 @@ public class NewTypeFormTest extends BaseTest {
         newFormPage.withFormName(formName)
                 .withFormLanguage(formLanguage)
                 .withFormType(formType)
-                .openFormBuilderPage();
+                .buildTypeForm();
         Header header = new Header(driver);
         header.goToHomePage();
 
@@ -74,7 +72,7 @@ public class NewTypeFormTest extends BaseTest {
     /**
      * The test deletes all the forms with a given name
      */
-    @Test
+    @Test(enabled = false)
     public void deleteTypeForm() {
         driver.navigate().to(url);
         TypeFormPage typeFormPage = new TypeFormPage(driver);

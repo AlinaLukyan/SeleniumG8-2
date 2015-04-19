@@ -1,5 +1,6 @@
 package com.app.utils;
 
+import org.apache.log4j.Logger;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -8,13 +9,15 @@ import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /*
  *  Class that provides methods for extracting data from Excel tables.
  */
 public class ExcelDriver {
 
+    private static final Logger LOG = Logger.getLogger(ExcelDriver.class);
     /*
      * Static method that retrieves testing data from multiple data Excel table and returns it
      * as Map collection of key-value pairs. Column Number indicates number of data set. Note, please, that returned values
@@ -40,6 +43,10 @@ public class ExcelDriver {
             testData.put(keyCell.getStringCellValue(), valueCell.getStringCellValue());
         }
         input.close();
+
+        LOG.info(dataFileName + "/" + sheetName + " has been read.");
+        LOG.info("The data retrieved: " + testData);
+
         return testData;
     }
 
@@ -70,6 +77,9 @@ public class ExcelDriver {
             testData.put(keyCell.getStringCellValue(), valueCell.getStringCellValue());
         }
         input.close();
+
+        LOG.info(dataFileName + "/" + sheetName + " has been read.");
+        LOG.info("The data retrieved: " + testData);
         return testData;
     }
 
@@ -100,6 +110,10 @@ public class ExcelDriver {
             testData.put(keyCell.getStringCellValue(), valueCell.getStringCellValue());
         }
         input.close();
+
+        LOG.info(dataFileName + "/" + sheetName + " has been read.");
+        LOG.info("The data retrieved: " + testData);
+
         return testData;
     }
 }

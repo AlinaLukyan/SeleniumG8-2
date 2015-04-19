@@ -1,8 +1,7 @@
 package tests;
 
 import com.app.utils.Database;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -13,7 +12,7 @@ import java.sql.SQLException;
 public class DbTest {
 
     private Database dbOracle;
-    protected static final Logger LOG = LoggerFactory.getLogger(DbTest.class);
+    protected static final Logger LOG = Logger.getLogger(DbTest.class);
 
     @BeforeClass
     public void setUp() throws SQLException, IOException, ClassNotFoundException {

@@ -33,3 +33,16 @@ String jScript = "var myList = document.getElementsByClassName(\"mceContentBody\
 + "myList[0].innerHTML=\"Please, display this text\";";
 JavascriptExecutor executor2 = (JavascriptExecutor)driver;
 executor2.executeScript(jScript);
+
+Alert alert = driver.switchTo().alert();
+alert.accept();
+
+
+// Code to capture the screenshot
+File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+// Code to copy the screenshot in the desired location
+FileUtils.copyFile(scrFile, new File("C:\\CaptureScreenshot\\google.jpg"));
+
+//Why is it not possible to interact with hidden elements?
+WebElement element = ...;
+((JavascriptExecutor) driver).executeScript("return arguments[0].getText();", element);

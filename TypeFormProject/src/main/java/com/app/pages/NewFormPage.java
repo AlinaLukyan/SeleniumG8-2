@@ -2,16 +2,15 @@ package com.app.pages;
 
 import com.app.utils.ConfigData;
 import com.app.utils.Utils;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class NewFormPage {
 
     private WebDriver driver;
-    private static final Logger LOG = LoggerFactory.getLogger(NewFormPage.class);
+    private static final Logger LOG = Logger.getLogger(NewFormPage.class);
 
     private Utils utils;
 
@@ -36,6 +35,7 @@ public class NewFormPage {
         formNameInput = driver.findElement(ConfigData.ui(formNameInputLocator));
         formNameInput.clear();
         formNameInput.sendKeys(formName);
+        LOG.info("The name for the form is set to " + formName + ".");
         return this;
     }
 
@@ -43,6 +43,7 @@ public class NewFormPage {
         formLanguageSelectButton = driver.findElement(ConfigData.ui(formLanguageSelectButtonLocator));
         By listLocator = ConfigData.ui(formLanguageListLocator);
         utils.selectFromDropDown(formLanguageSelectButton, listLocator, formLanguage);
+        LOG.info("Selected " + formLanguage + " language.");
         return this;
     }
 
@@ -50,12 +51,15 @@ public class NewFormPage {
         formTypeSelectButton = driver.findElement(ConfigData.ui(formTypeSelectButtonLocator));
         By listLocator = ConfigData.ui(formTypeListLocator);
         utils.selectFromDropDown(formTypeSelectButton, listLocator, formType);
+        LOG.info("Selected " + formType + " form type.");
+
         return this;
     }
 
-    public TypeFormBuilderPage openFormBuilderPage() {
+    public TypeFormBuilderPage buildTypeForm() {
         buildButton = driver.findElement(ConfigData.ui(buildButtonLocator));
         buildButton.click();
+        LOG.info("A new TypeForm has been built.");
         return new TypeFormBuilderPage(driver);
     }
 }

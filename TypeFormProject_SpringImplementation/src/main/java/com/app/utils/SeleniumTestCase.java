@@ -1,4 +1,4 @@
-package tests;
+package com.app.utils;
 
 import com.app.utils.SeleniumTestCaseContext;
 import com.app.utils.SeleniumTestExecutionListener;

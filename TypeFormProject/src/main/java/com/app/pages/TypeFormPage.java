@@ -2,11 +2,10 @@ package com.app.pages;
 
 
 import com.app.utils.ConfigData;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -15,7 +14,7 @@ public class TypeFormPage {
 
     private WebDriver driver;
     private Actions actions;
-    private static final Logger LOG = LoggerFactory.getLogger(TypeFormPage.class);
+    private static final Logger LOG = Logger.getLogger(TypeFormPage.class);
 
     private WebElement newTypeFormButton;
     private List<WebElement> customForms;
@@ -46,6 +45,8 @@ public class TypeFormPage {
     public NewFormPage addNewForm() {
         newTypeFormButton = driver.findElement(ConfigData.ui(newTypeFormButtonLocator));
         actions.moveToElement(newTypeFormButton).click().build().perform();
+
+        LOG.info("Added a new TypeForm.");
         return new NewFormPage(driver);
     }
 

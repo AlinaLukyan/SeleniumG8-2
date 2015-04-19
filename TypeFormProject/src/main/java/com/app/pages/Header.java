@@ -1,14 +1,13 @@
 package com.app.pages;
 
 import com.app.utils.ConfigData;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Header {
 
-    private final static Logger LOG = LoggerFactory.getLogger(Header.class);
+    private final static Logger LOG = Logger.getLogger(Header.class);
 
     private WebDriver driver;
 

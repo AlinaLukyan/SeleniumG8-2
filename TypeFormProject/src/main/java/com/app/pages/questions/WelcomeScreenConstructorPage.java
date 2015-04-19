@@ -4,17 +4,16 @@ package com.app.pages.questions;
 import com.app.pages.TypeFormBuilderPage;
 import com.app.utils.ConfigData;
 import com.app.utils.Utils;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class WelcomeScreenConstructorPage {
 
     private WebDriver driver;
-    private static final Logger LOG = LoggerFactory.getLogger(WelcomeScreenConstructorPage.class);
+    private static final Logger LOG = Logger.getLogger(WelcomeScreenConstructorPage.class);
 
     private Utils utils;
     private WebDriverWait wait;
@@ -44,6 +43,8 @@ public class WelcomeScreenConstructorPage {
     public WelcomeScreenConstructorPage addWelcomeScreenText(String welcomeText) {
         welcomeTextIFrame = driver.findElement(ConfigData.ui(welcomeTextIFrameLocator));
         driver.switchTo().frame(welcomeTextIFrame);
+//        WebElement textField = driver.switchTo().activeElement();
+//        textField.sendKeys(welcomeText);
         utils.setInnerHTML(welcomeTextInput, welcomeText);
         driver.switchTo().defaultContent();
         return this;

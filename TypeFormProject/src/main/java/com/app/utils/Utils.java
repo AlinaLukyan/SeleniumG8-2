@@ -1,11 +1,10 @@
 package com.app.utils;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -16,7 +15,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class Utils {
 
-    private static final Logger LOG = LoggerFactory.getLogger(Utils.class);
+    private static final Logger LOG = Logger.getLogger(Utils.class);
 
     private WebDriver driver;
     public static final int DEFAULT_WAIT = 30;
@@ -107,7 +106,7 @@ public class Utils {
      * It returns a By locator for the WebElement from UI mapping file
      */
     public static By getLocatorByType(String locator) {
-        LOG.info("locator: {}", locator);
+        LOG.info("locator: {" + locator + "}");
         String[] splitValue = locator.split("\"");
         String locatorType = splitValue[0].substring(0, splitValue[0].length() - 1);
         String locatorValue = splitValue[1];
